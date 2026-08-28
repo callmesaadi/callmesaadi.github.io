@@ -1,340 +1,733 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Vet Saad Shahid | DVM Student</title>
+<title>Vet Saad Shahid | DVM Student</title>
 
-  <style>
-  .profile-photo {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 5px solid #0f766e;
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
 
-    body {
-      background: #f5fbfa;
-      color: #1f2937;
-      line-height: 1.6;
-    }
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7faf9;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #087f5b;
+}
+
+nav a {
+    text-decoration: none;
+    color: #374151;
+    margin-left: 22px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #087f5b;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 7%;
+    background: linear-gradient(135deg, #e8fff6, #f7faf9);
+}
+
+.hero-content {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text span {
+    color: #087f5b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 12px 0 20px;
+    color: #12372a;
+}
+
+.hero-text p {
+    font-size: 19px;
+    max-width: 600px;
+    color: #4b5563;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.primary {
+    background: #087f5b;
+    color: white;
+}
+
+.secondary {
+    border: 2px solid #087f5b;
+    color: #087f5b;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* PROFILE PHOTO */
+
+.photo-container {
+    flex: 0 0 330px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 85px 7%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #12372a;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #6b7280;
+}
+
+/* ABOUT */
+
+.about-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+}
+
+.about-card h3 {
+    color: #087f5b;
+    margin-bottom: 12px;
+}
+
+/* SERVICES */
+
+.services {
+    background: #eefaf6;
+}
+
+.service-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #087f5b;
+    margin-bottom: 10px;
+}
+
+/* QUALIFICATION */
+
+.qualification {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+}
+
+.qualification p {
+    margin: 12px 0;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #12372a;
+    color: white;
+}
+
+.contact .section-title h2 {
+    color: white;
+}
+
+.contact .section-title p {
+    color: #d1d5db;
+}
+
+.contact-box {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    color: #1f2937;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.contact-item {
+    margin: 16px 0;
+}
+
+.contact-item strong {
+    color: #087f5b;
+}
+
+.contact-item a {
+    color: #087f5b;
+    text-decoration: none;
+}
+
+/* DISCLAIMER */
+
+.disclaimer {
+    max-width: 900px;
+    margin: 30px auto 0;
+    background: #fff8e1;
+    color: #5f4b00;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    background: #0b241b;
+    color: #d1d5db;
+    text-align: center;
+    padding: 25px;
+}
+
+footer strong {
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
 
     header {
-      background: #0f766e;
-      color: white;
-      padding: 25px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 34px;
-      margin-bottom: 5px;
-    }
-
-    nav {
-      margin-top: 18px;
+        flex-direction: column;
+        gap: 12px;
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 8px;
-      font-weight: bold;
+        margin: 0 7px;
+        font-size: 14px;
     }
 
     .hero {
-      padding: 70px 20px;
-      text-align: center;
-      background: #ccfbf1;
+        min-height: auto;
+        padding: 60px 6%;
     }
 
-    .hero h2 {
-      font-size: 38px;
-      color: #115e59;
-      margin-bottom: 15px;
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
     }
 
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
+    .hero-text h1 {
+        font-size: 40px;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 13px 25px;
-      background: #0f766e;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+    .hero-text p {
+        margin: auto;
+    }
+
+    .photo-container {
+        flex: none;
+    }
+
+    .profile-photo {
+        width: 230px;
+        height: 230px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
     }
 
     section {
-      padding: 55px 20px;
-      text-align: center;
+        padding: 60px 6%;
     }
 
-    section h2 {
-      color: #115e59;
-      margin-bottom: 25px;
-      font-size: 30px;
-    }
+}
 
-    .about {
-      max-width: 750px;
-      margin: auto;
-    }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      width: 280px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      color: #0f766e;
-      margin-bottom: 10px;
-    }
-
-    .info {
-      max-width: 700px;
-      margin: auto;
-      text-align: left;
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    .info p {
-      margin: 10px 0;
-    }
-
-    #contact {
-      background: #e6fffa;
-    }
-
-    footer {
-      background: #134e4a;
-      color: white;
-      text-align: center;
-      padding: 22px;
-    }
-  </style>
+</style>
 </head>
+
 
 <body>
 
+<!-- HEADER -->
+
 <header>
 
-  <h1>🐾 VET SAAD SHAHID</h1>
+    <div class="logo">🐾 VET SAAD SHAHID</div>
 
-  <p>DVM Student | Animal Health & Veterinary Care</p>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero" id="home">
 
-  <h2>Welcome to Vet Saad Shahid</h2>
+    <div class="hero-content">
 
-  <p>
-    Sharing veterinary knowledge, animal health information
-    and responsible animal care.
-  </p>
+        <div class="hero-text">
 
-  <a class="button" href="#about">Learn More</a>
+            <span>DVM STUDENT • UVAS LAHORE</span>
+
+            <h1>
+                Passion for<br>
+                Animal Health
+            </h1>
+
+            <p>
+                Welcome to my veterinary profile. I am a Doctor of
+                Veterinary Medicine student interested in animal
+                health, veterinary education and responsible animal care.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#about" class="btn primary">
+                    About Me
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="photo-container">
+
+            <img
+                src="IMG_3754.jpeg"
+                alt="Vet Saad Shahid"
+                class="profile-photo"
+            >
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- ABOUT -->
 
 <section id="about">
-<img src="IMG_3754.jpeg" alt="Vet Saad Shahid" class="profile-photo">
-  <h2>About Me</h2>
 
-  <div class="about">
+    <div class="section-title">
 
-    <p>
-      I am a student of Doctor of Veterinary Medicine (DVM).
-      I am currently studying at the University of Veterinary
-      and Animal Sciences (UVAS), Lahore.
-    </p>
+        <h2>About Me</h2>
 
-    <br>
+        <p>Getting to know the person behind the veterinary journey</p>
 
-    <p>
-      My goal is to develop professional knowledge in veterinary
-      medicine and promote better animal health and responsible
-      animal care.
-    </p>
+    </div>
 
-  </div>
+
+    <div class="about-container">
+
+        <div class="about-card">
+
+            <h3>🐾 Who I Am</h3>
+
+            <p>
+                I am a student of Doctor of Veterinary Medicine (DVM).
+                I am currently studying at the University of Veterinary
+                and Animal Sciences (UVAS), Lahore.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <h3>🎓 My Goal</h3>
+
+            <p>
+                My goal is to develop strong professional knowledge
+                in veterinary medicine and contribute to better
+                animal health, welfare and responsible animal care.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- QUALIFICATION -->
 
 <section>
 
-  <h2>My Qualification</h2>
+    <div class="section-title">
 
-  <div class="info">
+        <h2>Education</h2>
 
-    <p><strong>Qualification:</strong> DVM Student</p>
+        <p>My current academic journey</p>
 
-    <p>
-      <strong>Institute:</strong>
-      University of Veterinary and Animal Sciences (UVAS), Lahore
-    </p>
+    </div>
 
-    <p>
-      <strong>Office:</strong> Lahore, Pakistan
-    </p>
 
-  </div>
+    <div class="qualification">
+
+        <p>
+            <strong>Qualification:</strong>
+            DVM Student
+        </p>
+
+        <p>
+            <strong>Institute:</strong>
+            University of Veterinary and Animal Sciences (UVAS), Lahore
+        </p>
+
+        <p>
+            <strong>Office:</strong>
+            Lahore, Pakistan
+        </p>
+
+    </div>
 
 </section>
 
 
-<section id="services">
+<!-- SERVICES -->
 
-  <h2>Basic Veterinary Services</h2>
+<section class="services" id="services">
 
-  <div class="cards">
+    <div class="section-title">
 
-    <div class="card">
-      <h3>🩺 General Animal Checkup</h3>
-      <p>
-        Basic guidance regarding routine animal health
-        examinations and common health concerns.
-      </p>
+        <h2>Veterinary Knowledge</h2>
+
+        <p>
+            Basic educational information about animal health and care
+        </p>
+
     </div>
 
-    <div class="card">
-      <h3>💉 Vaccination Information</h3>
-      <p>
-        General information about the importance of
-        vaccination and preventive animal care.
-      </p>
-    </div>
 
-    <div class="card">
-      <h3>🥗 Animal Nutrition</h3>
-      <p>
-        Basic information about proper feeding,
-        nutrition and healthy animal management.
-      </p>
-    </div>
+    <div class="service-grid">
 
-    <div class="card">
-      <h3>🐕 Pet Care Guidance</h3>
-      <p>
-        General guidance about hygiene, daily care
-        and responsible pet ownership.
-      </p>
-    </div>
 
-    <div class="card">
-      <h3>🐄 Livestock Care</h3>
-      <p>
-        Basic educational information about livestock
-        management and animal welfare.
-      </p>
-    </div>
+        <div class="service-card">
 
-    <div class="card">
-      <h3>📚 Veterinary Education</h3>
-      <p>
-        Veterinary educational content and easy-to-understand
-        animal health information.
-      </p>
-    </div>
+            <div class="service-icon">🩺</div>
 
-  </div>
+            <h3>Animal Health</h3>
+
+            <p>
+                Basic educational information about common animal
+                health concerns and preventive care.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">💉</div>
+
+            <h3>Vaccination</h3>
+
+            <p>
+                General information about vaccination and the
+                importance of preventive animal healthcare.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🥗</div>
+
+            <h3>Animal Nutrition</h3>
+
+            <p>
+                Basic information about nutrition, feeding and
+                healthy animal management.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🐕</div>
+
+            <h3>Pet Care</h3>
+
+            <p>
+                Educational guidance about hygiene, daily care
+                and responsible pet ownership.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">🐄</div>
+
+            <h3>Livestock Care</h3>
+
+            <p>
+                Basic educational information about livestock
+                management, welfare and care.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-icon">📚</div>
+
+            <h3>Veterinary Education</h3>
+
+            <p>
+                Easy-to-understand veterinary educational content
+                for students and animal owners.
+            </p>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
-<section id="contact">
+<!-- CONTACT -->
 
-  <h2>Contact Me</h2>
+<section class="contact" id="contact">
 
-  <div class="info">
+    <div class="section-title">
 
-    <p>
-      <strong>📱 Phone:</strong>
-      <a href="tel:03136725927">03136725927</a>
-    </p>
+        <h2>Contact Me</h2>
 
-    <p>
-      <strong>📧 Email:</strong>
-      <a href="mailto:raeessaadshahid@gmail.com">
-        raeessaadshahid@gmail.com
-      </a>
-    </p>
+        <p>
+            Feel free to get in touch
+        </p>
 
-    <p>
-      <strong>🏢 Office:</strong> Lahore, Pakistan
-    </p>
+    </div>
 
-    <p>
-      <strong>🏠 Home Town:</strong>
-      Basti Haji Gul Muhammad Terhaily,
-      Chak No. 42 NP, Sadiqabad, Pakistan
-    </p>
 
-    <p>
-      <strong>📸 Instagram:</strong>
-      <a href="https://www.instagram.com/call.me.saadi"
-         target="_blank">
-        @call.me.saadi
-      </a>
-    </p>
+    <div class="contact-box">
 
-  </div>
+        <div class="contact-item">
 
-  <a class="button" href="mailto:raeessaadshahid@gmail.com">
-    Email Me
-  </a>
+            <strong>📱 Phone:</strong><br>
+
+            <a href="tel:03136725927">
+                03136725927
+            </a>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <strong>📧 Email:</strong><br>
+
+            <a href="mailto:raeessaadshahid@gmail.com">
+                raeessaadshahid@gmail.com
+            </a>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <strong>🏢 Office:</strong><br>
+
+            Lahore, Pakistan
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <strong>🏠 Home Town:</strong><br>
+
+            Basti Haji Gul Muhammad Terhaily,
+            Chak No. 42 NP, Sadiqabad, Pakistan
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <strong>📸 Instagram:</strong><br>
+
+            <a
+                href="https://www.instagram.com/call.me.saadi"
+                target="_blank"
+            >
+                @call.me.saadi
+            </a>
+
+        </div>
+
+
+        <div style="text-align:center; margin-top:25px;">
+
+            <a
+                href="mailto:raeessaadshahid@gmail.com"
+                class="btn primary"
+            >
+                Send Me an Email
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="disclaimer">
+
+        <strong>Important:</strong>
+        I am currently a DVM student at UVAS Lahore.
+        The information presented on this website is for
+        general educational purposes and does not replace
+        professional veterinary consultation.
+
+    </div>
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
-  <p>© 2026 Vet Saad Shahid. All Rights Reserved.</p>
+    <p>
+        © 2026 <strong>Vet Saad Shahid</strong>
+    </p>
 
-  <p>DVM Student | UVAS Lahore</p>
+    <p>
+        DVM Student • UVAS Lahore
+    </p>
 
 </footer>
+
 
 </body>
 </html>

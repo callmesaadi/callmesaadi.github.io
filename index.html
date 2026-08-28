@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saadi Veterinary</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5fbf8;
+            color: #18352b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f6b4f;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 90px 7%;
+            text-align: center;
+            background: linear-gradient(135deg, #dff7ec, #ffffff);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #0f6b4f;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 28px;
+            background: #0f6b4f;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 7%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #0f6b4f;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #0f6b4f;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #e5f6ee;
+        }
+
+        footer {
+            background: #0b4938;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>🐾 Saadi Veterinary</h2>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Professional Veterinary Care</h1>
+
+    <p>
+        Caring for animals with knowledge, compassion and dedication.
+    </p>
+
+    <a class="button" href="#contact">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+        <p>
+            Welcome to my veterinary website. I am a Doctor of Veterinary
+            Medicine student passionate about animal health, disease
+            prevention and compassionate veterinary care.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Veterinary Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>🩺 Animal Checkups</h3>
+            <p>
+                General health assessment and examination of animals.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💊 Animal Health</h3>
+            <p>
+                Information and guidance about common animal health problems.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🐕 Pet Care</h3>
+            <p>
+                Basic information about proper pet care, nutrition and hygiene.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🐄 Livestock Care</h3>
+            <p>
+                Educational information about cattle, sheep, goats and other
+                livestock.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <p>
+        For questions and veterinary information, you can contact me.
+    </p>
+
+    <a class="button" href="mailto:your@email.com">
+        📧 Email Me
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Saadi Veterinary. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

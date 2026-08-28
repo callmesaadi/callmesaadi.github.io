@@ -1,227 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetCare - Veterinary Care</title>
 
-    <title>Saadi Veterinary</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    body {
+      background: #f5fbfa;
+      color: #1f2937;
+      line-height: 1.6;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5fbf8;
-            color: #18352b;
-            line-height: 1.6;
-        }
+    header {
+      background: #0f766e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
-        header {
-            background: #0f6b4f;
-            color: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
 
-        header h2 {
-            font-size: 24px;
-        }
+    nav {
+      margin-top: 15px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
 
-        .hero {
-            padding: 90px 7%;
-            text-align: center;
-            background: linear-gradient(135deg, #dff7ec, #ffffff);
-        }
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: #ccfbf1;
+    }
 
-        .hero h1 {
-            font-size: 48px;
-            color: #0f6b4f;
-            margin-bottom: 15px;
-        }
+    .hero h2 {
+      font-size: 38px;
+      color: #115e59;
+      margin-bottom: 15px;
+    }
 
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: auto;
-        }
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      font-size: 18px;
+    }
 
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 28px;
-            background: #0f6b4f;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 13px 25px;
+      background: #0f766e;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
 
-        section {
-            padding: 60px 7%;
-        }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-        section h2 {
-            text-align: center;
-            font-size: 32px;
-            margin-bottom: 30px;
-            color: #0f6b4f;
-        }
+    section h2 {
+      color: #115e59;
+      margin-bottom: 25px;
+      font-size: 30px;
+    }
 
-        .about {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-        }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
+    .card {
+      background: white;
+      padding: 25px;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
 
-        .card {
-            background: white;
-            padding: 30px 20px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
+    .card h3 {
+      color: #0f766e;
+      margin-bottom: 10px;
+    }
 
-        .card h3 {
-            color: #0f6b4f;
-            margin-bottom: 10px;
-        }
+    #contact {
+      background: #e6fffa;
+    }
 
-        .contact {
-            text-align: center;
-            background: #e5f6ee;
-        }
-
-        footer {
-            background: #0b4938;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            nav a {
-                margin: 0 6px;
-                font-size: 14px;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-        }
-    </style>
+    footer {
+      background: #134e4a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <h2>🐾 Saadi Veterinary</h2>
+  <header>
+    <h1>🐾 VetCare</h1>
+    <p>Compassionate Veterinary Care</p>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-</header>
+  </header>
 
-<section class="hero">
-    <h1>Professional Veterinary Care</h1>
-
+  <section class="hero" id="home">
+    <h2>Healthy Animals, Happy Lives 🐶🐱</h2>
     <p>
-        Caring for animals with knowledge, compassion and dedication.
+      Professional veterinary information and compassionate care
+      for animals and their owners.
     </p>
 
-    <a class="button" href="#contact">Contact Me</a>
-</section>
+    <a class="button" href="#services">Our Services</a>
+  </section>
 
-<section id="about">
-    <h2>About Me</h2>
+  <section id="services">
+    <h2>Our Services</h2>
 
-    <div class="about">
+    <div class="cards">
+
+      <div class="card">
+        <h3>🩺 General Checkup</h3>
         <p>
-            Welcome to my veterinary website. I am a Doctor of Veterinary
-            Medicine student passionate about animal health, disease
-            prevention and compassionate veterinary care.
+          Routine health examinations to help keep your pets healthy.
         </p>
-    </div>
-</section>
+      </div>
 
-<section id="services">
-    <h2>Veterinary Services</h2>
+      <div class="card">
+        <h3>💉 Vaccination</h3>
+        <p>
+          Information and guidance about important animal vaccinations.
+        </p>
+      </div>
 
-    <div class="services">
-
-        <div class="card">
-            <h3>🩺 Animal Checkups</h3>
-            <p>
-                General health assessment and examination of animals.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>💊 Animal Health</h3>
-            <p>
-                Information and guidance about common animal health problems.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🐕 Pet Care</h3>
-            <p>
-                Basic information about proper pet care, nutrition and hygiene.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>🐄 Livestock Care</h3>
-            <p>
-                Educational information about cattle, sheep, goats and other
-                livestock.
-            </p>
-        </div>
+      <div class="card">
+        <h3>🐕 Animal Care</h3>
+        <p>
+          Helpful information about nutrition, hygiene and animal welfare.
+        </p>
+      </div>
 
     </div>
-</section>
+  </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Me</h2>
-
+  <section id="about">
+    <h2>About VetCare</h2>
     <p>
-        For questions and veterinary information, you can contact me.
+      VetCare is dedicated to promoting better animal health through
+      veterinary knowledge, responsible care and education.
     </p>
+  </section>
 
-    <a class="button" href="mailto:your@email.com">
-        📧 Email Me
-    </a>
-</section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question about animal care?</p>
+    <a class="button" href="mailto:your@email.com">Email Us</a>
+  </section>
 
-<footer>
-    <p>© 2026 Saadi Veterinary. All Rights Reserved.</p>
-</footer>
+  <footer>
+    <p>© 2026 VetCare. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>

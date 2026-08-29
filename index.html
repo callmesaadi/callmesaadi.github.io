@@ -5,388 +5,391 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vet Saad Shahid | DVM Student</title>
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
+/* ================= BASIC ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
-body{
-    background:#f7faf9;
-    color:#1f2937;
-    line-height:1.6;
+body {
+    background: #f7faf9;
+    color: #1f2937;
+    line-height: 1.6;
 }
-/* NAVBAR */
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(255,255,255,.96);
-    padding:18px 7%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 2px 18px rgba(0,0,0,.08);
+/* ================= NAVIGATION ================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.97);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 18px rgba(0,0,0,0.08);
 }
-.logo{
-    color:#087f5b;
-    font-size:21px;
-    font-weight:bold;
+.logo {
+    color: #087f5b;
+    font-size: 21px;
+    font-weight: bold;
 }
-nav a{
-    color:#374151;
-    text-decoration:none;
-    margin-left:25px;
-    font-weight:600;
-    transition:.3s;
+nav a {
+    color: #374151;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: 600;
+    transition: 0.3s;
 }
-nav a:hover{
-    color:#087f5b;
+nav a:hover {
+    color: #087f5b;
 }
-/* HERO */
-.hero{
-    min-height:90vh;
-    padding:70px 7%;
-    display:flex;
-    align-items:center;
-    background:linear-gradient(135deg,#e8fff6,#f7faf9);
+/* ================= HERO ================= */
+.hero {
+    min-height: 90vh;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #e8fff6, #f7faf9);
 }
-.hero-content{
-    width:100%;
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center;
-    gap:60px;
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
 }
-.hero-text span{
-    color:#087f5b;
-    font-size:17px;
-    font-weight:bold;
-    letter-spacing:1px;
+.hero-text span {
+    color: #087f5b;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
-.hero-text h1{
-    color:#12372a;
-    font-size:58px;
-    line-height:1.08;
-    margin:15px 0 22px;
+.hero-text h1 {
+    color: #12372a;
+    font-size: 58px;
+    line-height: 1.08;
+    margin: 15px 0 22px;
 }
-.hero-text p{
-    max-width:600px;
-    color:#4b5563;
-    font-size:19px;
+.hero-text p {
+    max-width: 600px;
+    color: #4b5563;
+    font-size: 19px;
 }
-.hero-buttons{
-    margin-top:30px;
+.hero-buttons {
+    margin-top: 30px;
 }
-.btn{
-    display:inline-block;
-    padding:14px 25px;
-    border-radius:9px;
-    text-decoration:none;
-    font-weight:bold;
-    margin-right:10px;
-    transition:.3s;
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.3s;
 }
-.btn:hover{
-    transform:translateY(-3px);
+.btn:hover {
+    transform: translateY(-3px);
 }
-.primary{
-    background:#087f5b;
-    color:white;
+.primary {
+    background: #087f5b;
+    color: white;
 }
-.secondary{
-    border:2px solid #087f5b;
-    color:#087f5b;
+.secondary {
+    border: 2px solid #087f5b;
+    color: #087f5b;
 }
-.whatsapp{
-    background:#25d366;
-    color:white;
+.whatsapp {
+    background: #25d366;
+    color: white;
 }
-/* HERO IMAGE */
-.photo-container{
-    width:100%;
+/* ================= PROFILE PHOTO ================= */
+.photo-container {
+    width: 100%;
 }
-.profile-photo{
-    width:100%;
-    height:420px;
-    object-fit:cover;
-    object-position:center;
-    border-radius:28px;
-    border:7px solid white;
-    box-shadow:0 20px 50px rgba(0,0,0,.18);
-    display:block;
-    transition:.4s;
+.profile-photo {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 28px;
+    border: 7px solid white;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.18);
+    display: block;
+    transition: 0.4s;
 }
-.profile-photo:hover{
-    transform:scale(1.02);
+.profile-photo:hover {
+    transform: scale(1.02);
 }
-/* SECTIONS */
-section{
-    padding:90px 7%;
+/* ================= SECTIONS ================= */
+section {
+    padding: 90px 7%;
 }
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
 }
-.section-title h2{
-    color:#12372a;
-    font-size:38px;
-    margin-bottom:10px;
+.section-title h2 {
+    color: #12372a;
+    font-size: 38px;
+    margin-bottom: 10px;
 }
-.section-title p{
-    color:#6b7280;
+.section-title p {
+    color: #6b7280;
 }
-/* ABOUT */
-.about-container{
-    max-width:1050px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
+/* ================= ABOUT ================= */
+.about-container {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
-.about-card{
-    background:white;
-    padding:35px;
-    border-radius:18px;
-    box-shadow:0 7px 30px rgba(0,0,0,.07);
-    transition:.3s;
+.about-card {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 7px 30px rgba(0,0,0,0.07);
+    transition: 0.3s;
 }
-.about-card:hover{
-    transform:translateY(-6px);
+.about-card:hover {
+    transform: translateY(-6px);
 }
-.about-card h3{
-    color:#087f5b;
-    margin-bottom:12px;
-    font-size:22px;
+.about-card h3 {
+    color: #087f5b;
+    margin-bottom: 12px;
+    font-size: 22px;
 }
-/* EDUCATION */
-.education-box{
-    max-width:850px;
-    margin:auto;
-    background:white;
-    padding:40px;
-    border-radius:18px;
-    box-shadow:0 7px 30px rgba(0,0,0,.07);
+/* ================= EDUCATION ================= */
+.education-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 7px 30px rgba(0,0,0,0.07);
 }
-.education-box p{
-    margin:14px 0;
+.education-box p {
+    margin: 14px 0;
 }
-/* SERVICES */
-.services{
-    background:#eefaf6;
+/* ================= ANIMAL GALLERY ================= */
+.gallery {
+    background: white;
 }
-.service-grid{
-    max-width:1150px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
+.gallery-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
-.service-card{
-    background:white;
-    padding:32px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 7px 25px rgba(0,0,0,.06);
-    transition:.3s;
+.gallery-card {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #eefaf6;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+    transition: 0.3s;
 }
-.service-card:hover{
-    transform:translateY(-7px);
+.gallery-card:hover {
+    transform: translateY(-7px);
 }
-.service-icon{
-    font-size:45px;
-    margin-bottom:15px;
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
 }
-.service-card h3{
-    color:#087f5b;
-    margin-bottom:10px;
+.gallery-card:hover img {
+    transform: scale(1.06);
 }
-/* CONTACT */
-.contact{
-    background:#12372a;
-    color:white;
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        transparent 30%,
+        rgba(0,0,0,0.78)
+    );
 }
-.contact .section-title h2{
-    color:white;
+.gallery-info {
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+    color: white;
+    z-index: 2;
 }
-.contact .section-title p{
-    color:#d1d5db;
+.gallery-info h3 {
+    font-size: 26px;
+    margin-bottom: 3px;
 }
-.contact-box{
-    max-width:850px;
-    margin:auto;
-    background:white;
-    color:#1f2937;
-    padding:40px;
-    border-radius:18px;
-    box-shadow:0 15px 40px rgba(0,0,0,.18);
+.gallery-info p {
+    font-size: 14px;
+    color: #f3f4f6;
 }
-.contact-item{
-    margin:18px 0;
+/* ================= SERVICES ================= */
+.services {
+    background: #eefaf6;
 }
-.contact-item strong{
-    color:#087f5b;
+.service-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
-.contact-item a{
-    color:#087f5b;
-    text-decoration:none;
+.service-card {
+    background: white;
+    padding: 32px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+    transition: 0.3s;
 }
-.contact-buttons{
-    text-align:center;
-    margin-top:30px;
+.service-card:hover {
+    transform: translateY(-7px);
 }
-/* DISCLAIMER */
-.disclaimer{
-    max-width:950px;
-    margin:35px auto 0;
-    padding:18px;
-    background:#fff8e1;
-    color:#5f4b00;
-    border-radius:12px;
-    text-align:center;
-    font-size:14px;
+.service-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
 }
-/* FOOTER */
-footer{
-    background:#0b241b;
-    color:#d1d5db;
-    text-align:center;
-    padding:28px;
+.service-card h3 {
+    color: #087f5b;
+    margin-bottom: 10px;
 }
-footer strong{
-    color:white;
+/* ================= CONTACT ================= */
+.contact {
+    background: #12372a;
+    color: white;
 }
-/* MOBILE */
-@media(max-width:900px){
-    header{
-        flex-direction:column;
-        gap:12px;
+.contact .section-title h2 {
+    color: white;
+}
+.contact .section-title p {
+    color: #d1d5db;
+}
+.contact-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    color: #1f2937;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+}
+.contact-item {
+    margin: 18px 0;
+}
+.contact-item strong {
+    color: #087f5b;
+}
+.contact-item a {
+    color: #087f5b;
+    text-decoration: none;
+}
+.contact-buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+/* ================= DISCLAIMER ================= */
+.disclaimer {
+    max-width: 950px;
+    margin: 35px auto 0;
+    padding: 18px;
+    background: #fff8e1;
+    color: #5f4b00;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+/* ================= FOOTER ================= */
+footer {
+    background: #0b241b;
+    color: #d1d5db;
+    text-align: center;
+    padding: 28px;
+}
+footer strong {
+    color: white;
+}
+/* ================= MOBILE ================= */
+@media(max-width:900px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
     }
-    nav{
-        text-align:center;
+    nav {
+        text-align: center;
     }
-    nav a{
-        margin:0 7px;
-        font-size:14px;
+    nav a {
+        margin: 0 6px;
+        font-size: 13px;
     }
-    .hero{
-        padding:55px 6%;
+    .hero {
+        padding: 55px 6%;
     }
-    .hero-content{
-        grid-template-columns:1fr;
-        gap:40px;
-        text-align:center;
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
     }
-    .hero-text h1{
-        font-size:42px;
+    .hero-text h1 {
+        font-size: 42px;
     }
-    .hero-text p{
-        margin:auto;
-        font-size:17px;
+    .hero-text p {
+        margin: auto;
+        font-size: 17px;
     }
-    .profile-photo{
-        height:280px;
-        border-radius:20px;
+    .profile-photo {
+        height: 280px;
+        border-radius: 20px;
     }
-    .about-container{
-        grid-template-columns:1fr;
+    .about-container {
+        grid-template-columns: 1fr;
     }
-    .service-grid{
-        grid-template-columns:1fr;
+    .gallery-grid {
+        grid-template-columns: 1fr;
     }
-    section{
-        padding:65px 6%;
+    .service-grid {
+        grid-template-columns: 1fr;
     }
-    .section-title h2{
-        font-size:32px;
+    section {
+        padding: 65px 6%;
     }
-    .contact-box{
-        padding:28px;
+    .section-title h2 {
+        font-size: 32px;
     }
-    .btn{
-        margin:5px;
+    .contact-box {
+        padding: 28px;
     }
-}<!-- ================= ANIMAL GALLERY ================= -->
-
-<section class="gallery" id="gallery">
-
-    <div class="section-title">
-
-        <h2>Animal Gallery</h2>
-
-        <p>
-            Exploring the diversity of animals and veterinary care
-        </p>
-
-    </div>
-
-    <div class="gallery-grid">
-
-        <div class="gallery-card">
-            <div class="gallery-emoji">🐕</div>
-            <div class="gallery-overlay"></div>
-            <h3>Dogs</h3>
-            <p>Companion animal care</p>
-        </div>
-
-        <div class="gallery-card">
-            <div class="gallery-emoji">🐈</div>
-            <div class="gallery-overlay"></div>
-            <h3>Cats</h3>
-            <p>Feline health and welfare</p>
-        </div>
-
-        <div class="gallery-card">
-            <div class="gallery-emoji">🐄</div>
-            <div class="gallery-overlay"></div>
-            <h3>Cattle</h3>
-            <p>Livestock health and management</p>
-        </div>
-
-        <div class="gallery-card">
-            <div class="gallery-emoji">🐎</div>
-            <div class="gallery-overlay"></div>
-            <h3>Horses</h3>
-            <p>Equine care and welfare</p>
-        </div>
-
-        <div class="gallery-card">
-            <div class="gallery-emoji">🐑</div>
-            <div class="gallery-overlay"></div>
-            <h3>Sheep</h3>
-            <p>Small ruminant management</p>
-        </div>
-
-        <div class="gallery-card">
-            <div class="gallery-emoji">🐦</div>
-            <div class="gallery-overlay"></div>
-            <h3>Birds</h3>
-            <p>Avian health and care</p>
-        </div>
-
-    </div>
-
-</section>
+    .btn {
+        margin: 5px;
+    }
+}
 </style>
 </head>
 <body>
+<!-- ================= HEADER ================= -->
 <header>
-<div class="logo">🐾 VET SAAD SHAHID</div>
+<div class="logo">
+    🐾 VET SAAD SHAHID
+</div>
 <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#education">Education</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>  
+    <a href="#gallery">Gallery</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
 </nav>
 </header>
+<!-- ================= HERO ================= -->
 <section class="hero" id="home">
 <div class="hero-content">
     <div class="hero-text">
@@ -419,10 +422,13 @@ footer strong{
     </div>
 </div>
 </section>
+<!-- ================= ABOUT ================= -->
 <section id="about">
 <div class="section-title">
     <h2>About Me</h2>
-    <p>My journey in veterinary medicine</p>
+    <p>
+        My journey in veterinary medicine
+    </p>
 </div>
 <div class="about-container">
     <div class="about-card">
@@ -443,10 +449,13 @@ footer strong{
     </div>
 </div>
 </section>
+<!-- ================= EDUCATION ================= -->
 <section id="education">
 <div class="section-title">
     <h2>Education</h2>
-    <p>My academic journey</p>
+    <p>
+        My academic journey
+    </p>
 </div>
 <div class="education-box">
     <p>
@@ -463,6 +472,108 @@ footer strong{
     </p>
 </div>
 </section>
+<!-- ================= ANIMAL GALLERY ================= -->
+<section class="gallery" id="gallery">
+<div class="section-title">
+    <h2>Animal Gallery</h2>
+    <p>
+        Exploring animals, veterinary care and animal welfare
+    </p>
+</div>
+<div class="gallery-grid">
+    <!-- DOG -->
+    <div class="gallery-card">
+        <img
+            src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Dog"
+            loading="lazy"
+        >
+        <div class="gallery-overlay"></div>
+        <div class="gallery-info">
+            <h3>Dogs</h3>
+            <p>
+                Companion animal care
+            </p>
+        </div>
+    </div>
+    <!-- CAT -->
+    <div class="gallery-card">
+        <img
+            src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Cat"
+            loading="lazy"
+        >
+        <div class="gallery-overlay"></div>
+        <div class="gallery-info">
+            <h3>Cats</h3>
+            <p>
+                Feline health and welfare
+            </p>
+        </div>
+    </div>
+    <!-- CATTLE -->
+    <div class="gallery-card">
+        <img
+            src="https://images.pexels.com/photos/422218/pexels-photo-422218.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Cattle"
+            loading="lazy"
+        >
+        <div class="gallery-overlay"></div>
+        <div class="gallery-info">
+            <h3>Cattle</h3>
+            <p>
+                Livestock health and management
+            </p>
+        </div>
+    </div>
+    <!-- HORSE -->
+    <div class="gallery-card">
+        <img
+            src="https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Horse"
+            loading="lazy"
+        >
+        <div class="gallery-overlay"></div>
+        <div class="gallery-info">
+            <h3>Horses</h3>
+            <p>
+                Equine care and welfare
+            </p>
+        </div>
+    </div>
+    <!-- SHEEP -->
+    <div class="gallery-card">
+        <img
+            src="https://images.pexels.com/photos/164673/pexels-photo-164673.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Sheep"
+            loading="lazy"
+        >
+        <div class="gallery-overlay"></div>
+        <div class="gallery-info">
+            <h3>Sheep</h3>
+            <p>
+                Small ruminant management
+            </p>
+        </div>
+    </div>
+    <!-- BIRD -->
+    <div class="gallery-card">
+        <img
+            src="https://images.pexels.com/photos/97533/pexels-photo-97533.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Bird"
+            loading="lazy"
+        >
+        <div class="gallery-overlay"></div>
+        <div class="gallery-info">
+            <h3>Birds</h3>
+            <p>
+                Avian health and care
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+<!-- ================= SERVICES ================= -->
 <section class="services" id="services">
 <div class="section-title">
     <h2>Veterinary Knowledge</h2>
@@ -521,10 +632,13 @@ footer strong{
     </div>
 </div>
 </section>
+<!-- ================= CONTACT ================= -->
 <section class="contact" id="contact">
 <div class="section-title">
     <h2>Contact Me</h2>
-    <p>Feel free to get in touch</p>
+    <p>
+        Feel free to get in touch
+    </p>
 </div>
 <div class="contact-box">
     <div class="contact-item">
@@ -583,6 +697,7 @@ footer strong{
     veterinary consultation.
 </div>
 </section>
+<!-- ================= FOOTER ================= -->
 <footer>
 <p>
     © 2026 <strong>Vet Saad Shahid</strong>

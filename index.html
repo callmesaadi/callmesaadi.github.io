@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vet Saad Shahid | DVM Student</title>
+<meta name="description" content="Vet Saad Shahid - DVM Student at UVAS Lahore. Veterinary medicine, animal health, welfare and education.">
+
+<title>Vet Saad Shahid | DVM Student • UVAS Lahore</title>
 
 <style>
 
-/* ================= BASIC ================= */
+/* =========================================================
+   RESET & BASIC
+========================================================= */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -23,134 +25,167 @@ html {
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background: #f7faf9;
     color: #1f2937;
-    line-height: 1.6;
+    line-height: 1.7;
+    overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
 
-/* ================= NAVIGATION ================= */
+img {
+    max-width: 100%;
+}
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+:root {
+    --green: #087f5b;
+    --dark-green: #12372a;
+    --light-green: #e8fff6;
+    --soft-green: #eefaf6;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --white: #ffffff;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 9999;
 
-    background: rgba(255,255,255,0.97);
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
 
-    padding: 18px 7%;
+    padding: 17px 7%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    box-shadow: 0 2px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.08);
 }
 
 .logo {
-    color: #087f5b;
+    color: var(--green);
     font-size: 21px;
-    font-weight: bold;
+    font-weight: 800;
+    letter-spacing: .3px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 nav a {
     color: #374151;
-    text-decoration: none;
-
-    margin-left: 22px;
-
     font-weight: 600;
-
-    transition: 0.3s;
+    font-size: 15px;
+    transition: .3s;
 }
 
 nav a:hover {
-    color: #087f5b;
+    color: var(--green);
 }
 
-
-/* ================= HERO ================= */
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero {
     min-height: 90vh;
-
-    padding: 70px 7%;
+    padding: 80px 7%;
 
     display: flex;
     align-items: center;
 
     background:
-        linear-gradient(
-            135deg,
-            #e8fff6,
-            #f7faf9
-        );
+        radial-gradient(circle at 85% 20%, rgba(8,127,91,.10), transparent 30%),
+        linear-gradient(135deg, #e8fff6, #f7faf9);
 }
 
 .hero-content {
     width: 100%;
     max-width: 1200px;
-
     margin: auto;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     align-items: center;
 
-    gap: 60px;
+    gap: 65px;
 }
 
-.hero-text span {
-    color: #087f5b;
+.hero-badge {
+    display: inline-block;
 
-    font-size: 17px;
+    padding: 8px 15px;
 
-    font-weight: bold;
+    background: white;
+    color: var(--green);
 
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 800;
     letter-spacing: 1px;
+
+    box-shadow: 0 7px 25px rgba(0,0,0,.06);
+
+    margin-bottom: 18px;
 }
 
 .hero-text h1 {
-    color: #12372a;
+    color: var(--dark-green);
 
-    font-size: 58px;
+    font-size: clamp(44px, 5vw, 66px);
 
-    line-height: 1.08;
+    line-height: 1.05;
 
-    margin: 15px 0 22px;
+    margin-bottom: 22px;
+}
+
+.hero-text h1 span {
+    color: var(--green);
 }
 
 .hero-text p {
-    max-width: 600px;
+    max-width: 620px;
 
     color: #4b5563;
 
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .hero-buttons {
-    margin-top: 30px;
+    margin-top: 32px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-
-
-/* ================= BUTTONS ================= */
 
 .btn {
     display: inline-block;
 
-    padding: 14px 25px;
+    padding: 13px 24px;
 
-    border-radius: 9px;
+    border-radius: 10px;
 
-    text-decoration: none;
+    font-weight: 700;
 
-    font-weight: bold;
-
-    margin-right: 10px;
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .btn:hover {
@@ -158,32 +193,33 @@ nav a:hover {
 }
 
 .primary {
-    background: #087f5b;
+    background: var(--green);
     color: white;
+    box-shadow: 0 8px 20px rgba(8,127,91,.20);
 }
 
 .secondary {
-    border: 2px solid #087f5b;
-    color: #087f5b;
+    border: 2px solid var(--green);
+    color: var(--green);
+    background: transparent;
 }
 
 .whatsapp {
     background: #25d366;
     color: white;
-
-    border: 2px solid #25d366;
 }
 
-
-/* ================= PROFILE PHOTO ================= */
+/* =========================================================
+   HERO PHOTO
+========================================================= */
 
 .photo-container {
-    width: 100%;
+    position: relative;
 }
 
 .profile-photo {
     width: 100%;
-    height: 420px;
+    height: 460px;
 
     object-fit: cover;
     object-position: center;
@@ -193,120 +229,249 @@ nav a:hover {
     border: 7px solid white;
 
     box-shadow:
-        0 20px 50px rgba(0,0,0,0.18);
+        0 25px 60px rgba(0,0,0,.18);
 
     display: block;
 
-    transition: 0.4s;
+    transition: .4s;
 }
 
 .profile-photo:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px);
 }
 
+/* Decorative label */
 
-/* ================= SECTIONS ================= */
+.photo-label {
+    position: absolute;
+
+    left: -20px;
+    bottom: 25px;
+
+    background: white;
+
+    padding: 15px 20px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,.13);
+
+    font-weight: 700;
+
+    color: var(--dark-green);
+}
+
+.photo-label span {
+    display: block;
+    color: var(--green);
+    font-size: 13px;
+}
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
 
 section {
-    padding: 90px 7%;
+    padding: 95px 7%;
 }
 
 .section-title {
     text-align: center;
-
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 .section-title h2 {
-    color: #12372a;
-
-    font-size: 38px;
-
+    color: var(--dark-green);
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .section-title p {
-    color: #6b7280;
+    color: var(--muted);
+    max-width: 650px;
+    margin: auto;
 }
 
+/* =========================================================
+   ABOUT
+========================================================= */
 
-/* ================= ABOUT ================= */
+.about {
+    background: white;
+}
 
 .about-container {
-    max-width: 1050px;
-
+    max-width: 1100px;
     margin: auto;
 
     display: grid;
-
     grid-template-columns: 1fr 1fr;
 
-    gap: 30px;
+    gap: 28px;
 }
 
 .about-card {
-    background: white;
+    background: #f8fcfa;
 
     padding: 35px;
 
-    border-radius: 18px;
+    border-radius: 20px;
 
-    box-shadow:
-        0 7px 30px rgba(0,0,0,0.07);
+    border: 1px solid #e4f2ec;
 
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .about-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.07);
+}
+
+.about-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
 }
 
 .about-card h3 {
-    color: #087f5b;
-
-    margin-bottom: 12px;
-
+    color: var(--green);
     font-size: 22px;
+    margin-bottom: 10px;
 }
 
+/* =========================================================
+   EDUCATION
+========================================================= */
 
-/* ================= EDUCATION ================= */
+.education {
+    background: #f7faf9;
+}
 
-.education-box {
+.timeline {
     max-width: 850px;
-
     margin: auto;
+    position: relative;
+}
 
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 18px;
+    top: 0;
+    bottom: 0;
+
+    width: 3px;
+
+    background: #bdebd9;
+}
+
+.timeline-item {
+    position: relative;
+
+    padding-left: 60px;
+
+    margin-bottom: 35px;
+}
+
+.timeline-dot {
+    position: absolute;
+
+    left: 7px;
+    top: 5px;
+
+    width: 25px;
+    height: 25px;
+
+    background: var(--green);
+
+    border: 5px solid #d9f7eb;
+
+    border-radius: 50%;
+}
+
+.timeline-card {
     background: white;
 
-    padding: 40px;
+    padding: 28px;
 
     border-radius: 18px;
 
-    box-shadow:
-        0 7px 30px rgba(0,0,0,0.07);
+    box-shadow: 0 7px 30px rgba(0,0,0,.06);
 }
 
-.education-box p {
-    margin: 14px 0;
+.timeline-card h3 {
+    color: var(--dark-green);
+    margin-bottom: 6px;
 }
 
+.timeline-card .year {
+    color: var(--green);
+    font-weight: bold;
+    font-size: 14px;
+}
 
-/* ================= ANIMAL GALLERY ================= */
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills {
+    background: white;
+}
+
+.skills-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 28px 20px;
+
+    text-align: center;
+
+    background: #f8fcfa;
+
+    border-radius: 18px;
+
+    border: 1px solid #e4f2ec;
+
+    transition: .3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.07);
+}
+
+.skill-icon {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.skill-card h3 {
+    color: var(--green);
+    font-size: 18px;
+}
+
+/* =========================================================
+   ANIMAL GALLERY
+========================================================= */
 
 .gallery {
-    background: white;
+    background: var(--soft-green);
 }
 
 .gallery-grid {
     max-width: 1150px;
-
     margin: auto;
 
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 25px;
 }
@@ -314,22 +479,21 @@ section {
 .gallery-card {
     position: relative;
 
-    height: 280px;
+    height: 300px;
 
     overflow: hidden;
 
     border-radius: 20px;
 
-    background: #eefaf6;
+    background: #ddd;
 
-    box-shadow:
-        0 8px 30px rgba(0,0,0,0.10);
+    box-shadow: 0 10px 35px rgba(0,0,0,.10);
 
-    transition: 0.3s;
+    transition: .35s;
 }
 
 .gallery-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-8px);
 }
 
 .gallery-card img {
@@ -340,11 +504,11 @@ section {
 
     display: block;
 
-    transition: 0.5s;
+    transition: .6s;
 }
 
 .gallery-card:hover img {
-    transform: scale(1.06);
+    transform: scale(1.08);
 }
 
 .gallery-overlay {
@@ -354,8 +518,8 @@ section {
 
     background:
         linear-gradient(
-            transparent 30%,
-            rgba(0,0,0,0.78)
+            transparent 25%,
+            rgba(0,0,0,.78)
         );
 }
 
@@ -372,73 +536,99 @@ section {
 
 .gallery-info h3 {
     font-size: 26px;
-
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 .gallery-info p {
+    color: #e5e7eb;
     font-size: 14px;
-
-    color: #f3f4f6;
 }
 
-
-/* ================= SERVICES ================= */
+/* =========================================================
+   VETERINARY KNOWLEDGE
+========================================================= */
 
 .services {
-    background: #eefaf6;
+    background: white;
 }
 
 .service-grid {
     max-width: 1150px;
-
     margin: auto;
 
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     gap: 25px;
 }
 
 .service-card {
-    background: white;
+    background: #f8fcfa;
 
     padding: 32px;
 
-    border-radius: 18px;
+    border-radius: 20px;
 
-    text-align: center;
+    border: 1px solid #e4f2ec;
 
-    box-shadow:
-        0 7px 25px rgba(0,0,0,0.06);
-
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .service-card:hover {
     transform: translateY(-7px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
 }
 
 .service-icon {
-    font-size: 45px;
-
-    margin-bottom: 15px;
+    font-size: 40px;
+    margin-bottom: 14px;
 }
 
 .service-card h3 {
-    color: #087f5b;
-
+    color: var(--green);
     margin-bottom: 10px;
 }
 
+/* =========================================================
+   QUOTE
+========================================================= */
 
-/* ================= CONTACT ================= */
+.quote-section {
+    background:
+        linear-gradient(
+            135deg,
+            #12372a,
+            #087f5b
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 7%;
+}
+
+.quote-section h2 {
+    max-width: 800px;
+    margin: auto;
+
+    font-size: 35px;
+
+    line-height: 1.3;
+}
+
+.quote-section p {
+    margin-top: 18px;
+    color: #d8f5e9;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
 
 .contact {
     background: #12372a;
-
     color: white;
 }
 
@@ -451,34 +641,46 @@ section {
 }
 
 .contact-box {
-    max-width: 850px;
-
+    max-width: 900px;
     margin: auto;
 
     background: white;
 
-    color: #1f2937;
+    color: var(--text);
 
-    padding: 40px;
+    padding: 42px;
 
-    border-radius: 18px;
+    border-radius: 22px;
 
-    box-shadow:
-        0 15px 40px rgba(0,0,0,0.18);
+    box-shadow: 0 20px 50px rgba(0,0,0,.20);
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
 }
 
 .contact-item {
-    margin: 18px 0;
+    padding: 20px;
+
+    background: #f8fcfa;
+
+    border-radius: 15px;
 }
 
 .contact-item strong {
-    color: #087f5b;
+    display: block;
+
+    color: var(--green);
+
+    margin-bottom: 4px;
 }
 
 .contact-item a {
-    color: #087f5b;
-
-    text-decoration: none;
+    color: var(--green);
 }
 
 .contact-buttons {
@@ -487,8 +689,9 @@ section {
     margin-top: 30px;
 }
 
-
-/* ================= DISCLAIMER ================= */
+/* =========================================================
+   DISCLAIMER
+========================================================= */
 
 .disclaimer {
     max-width: 950px;
@@ -508,8 +711,9 @@ section {
     font-size: 14px;
 }
 
-
-/* ================= FOOTER ================= */
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer {
     background: #0b241b;
@@ -518,44 +722,128 @@ footer {
 
     text-align: center;
 
-    padding: 28px;
+    padding: 30px;
 }
 
 footer strong {
     color: white;
 }
 
+.footer-links {
+    margin-top: 10px;
+}
 
-/* ================= MOBILE ================= */
+.footer-links a {
+    color: #b7e8d5;
+    margin: 0 8px;
+}
 
-@media(max-width:900px) {
+/* =========================================================
+   SCROLL ANIMATION
+========================================================= */
+
+.fade-up {
+    animation: fadeUp .8s ease both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width: 950px) {
 
     header {
-        flex-direction: column;
-
-        gap: 12px;
+        padding: 15px 5%;
     }
 
     nav {
-        text-align: center;
+        gap: 12px;
     }
 
     nav a {
-        margin: 0 6px;
-
         font-size: 13px;
-    }
-
-    .hero {
-        padding: 55px 6%;
     }
 
     .hero-content {
         grid-template-columns: 1fr;
-
-        gap: 40px;
-
+        gap: 45px;
         text-align: center;
+    }
+
+    .hero-text p {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .photo-container {
+        max-width: 650px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .photo-label {
+        left: 10px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    section {
+        padding: 65px 6%;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 60px 6%;
     }
 
     .hero-text h1 {
@@ -563,56 +851,60 @@ footer strong {
     }
 
     .hero-text p {
-        margin: auto;
-
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .profile-photo {
-        height: 280px;
-
+        height: 330px;
         border-radius: 20px;
     }
 
-    .about-container {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    section {
-        padding: 65px 6%;
+    .photo-label {
+        bottom: 15px;
+        font-size: 13px;
     }
 
     .section-title h2 {
         font-size: 32px;
     }
 
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-card {
+        height: 280px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
     .contact-box {
-        padding: 28px;
+        padding: 25px;
+    }
+
+    .quote-section h2 {
+        font-size: 27px;
     }
 
     .btn {
-        margin: 5px;
+        padding: 12px 18px;
     }
-
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- ================= HEADER ================= -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
 <header>
 
@@ -621,75 +913,52 @@ footer strong {
     </div>
 
     <nav>
-
         <a href="#home">Home</a>
-
         <a href="#about">About</a>
-
         <a href="#education">Education</a>
-
+        <a href="#skills">Skills</a>
         <a href="#gallery">Gallery</a>
-
-        <a href="#services">Services</a>
-
+        <a href="#services">Knowledge</a>
         <a href="#contact">Contact</a>
-
     </nav>
 
 </header>
 
 
-
-<!-- ================= HERO ================= -->
+<!-- =========================================================
+     HERO
+========================================================= -->
 
 <section class="hero" id="home">
 
     <div class="hero-content">
 
+        <div class="hero-text fade-up">
 
-        <div class="hero-text">
-
-            <span>
-                DVM STUDENT • UVAS LAHORE
-            </span>
-
+            <div class="hero-badge">
+                🩺 DVM STUDENT • UVAS LAHORE
+            </div>
 
             <h1>
-
                 Veterinary Medicine.<br>
-
-                Passion. Purpose. Care.
-
+                <span>Passion. Purpose. Care.</span>
             </h1>
 
-
             <p>
-
-                I am Saad Shahid, a DVM student at the
-                University of Veterinary and Animal Sciences,
-                Lahore.
-
-                I am passionate about veterinary medicine,
-                animal health, animal welfare and continuous
-                learning.
-
+                I am Saad Shahid, a Doctor of Veterinary Medicine
+                student at the University of Veterinary and Animal
+                Sciences, Lahore. My interests include animal
+                health, welfare, veterinary education and continuous
+                professional learning.
             </p>
-
 
             <div class="hero-buttons">
 
-                <a
-                    href="#about"
-                    class="btn primary"
-                >
-                    About Me
+                <a href="#about" class="btn primary">
+                    Discover My Journey
                 </a>
 
-
-                <a
-                    href="#contact"
-                    class="btn secondary"
-                >
+                <a href="#contact" class="btn secondary">
                     Contact Me
                 </a>
 
@@ -698,8 +967,7 @@ footer strong {
         </div>
 
 
-
-        <div class="photo-container">
+        <div class="photo-container fade-up">
 
             <img
                 src="IMG_4626.jpeg"
@@ -707,27 +975,30 @@ footer strong {
                 class="profile-photo"
             >
 
-        </div>
+            <div class="photo-label">
+                Saad Shahid
+                <span>DVM Student • UVAS Lahore</span>
+            </div>
 
+        </div>
 
     </div>
 
 </section>
 
 
+<!-- =========================================================
+     ABOUT
+========================================================= -->
 
-<!-- ================= ABOUT ================= -->
-
-<section id="about">
+<section class="about" id="about">
 
     <div class="section-title">
 
-        <h2>
-            About Me
-        </h2>
+        <h2>About Me</h2>
 
         <p>
-            My journey in veterinary medicine
+            A student building a professional journey in veterinary medicine.
         </p>
 
     </div>
@@ -735,130 +1006,253 @@ footer strong {
 
     <div class="about-container">
 
-
         <div class="about-card">
 
-            <h3>
-                🐾 Who I Am
-            </h3>
+            <div class="about-icon">🐾</div>
+
+            <h3>Who I Am</h3>
 
             <p>
-
-                I am a Doctor of Veterinary Medicine student
-                currently studying at the University of
-                Veterinary and Animal Sciences (UVAS),
-                Lahore.
-
+                I am a Doctor of Veterinary Medicine student currently
+                studying at the University of Veterinary and Animal
+                Sciences (UVAS), Lahore.
             </p>
 
         </div>
 
 
-
         <div class="about-card">
 
-            <h3>
-                🎯 My Goal
-            </h3>
+            <div class="about-icon">🎯</div>
+
+            <h3>My Goal</h3>
 
             <p>
-
-                My goal is to build strong professional
-                knowledge in veterinary medicine and
-                contribute to better animal health,
-                welfare and responsible animal care.
-
+                My goal is to develop strong scientific and practical
+                knowledge in veterinary medicine and contribute to
+                responsible animal healthcare and welfare.
             </p>
 
         </div>
 
+
+        <div class="about-card">
+
+            <div class="about-icon">📚</div>
+
+            <h3>My Learning</h3>
+
+            <p>
+                I am continuously learning about animal health,
+                disease prevention, nutrition, welfare and modern
+                veterinary practices.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">❤️</div>
+
+            <h3>My Passion</h3>
+
+            <p>
+                I have a strong interest in animals and veterinary
+                science, with a focus on learning how knowledge can
+                improve animal health and responsible care.
+            </p>
+
+        </div>
 
     </div>
 
 </section>
 
 
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
 
-<!-- ================= EDUCATION ================= -->
-
-<section id="education">
+<section class="education" id="education">
 
     <div class="section-title">
 
-        <h2>
-            Education
-        </h2>
+        <h2>Education</h2>
 
         <p>
-            My academic journey
+            My academic journey toward veterinary medicine.
         </p>
 
     </div>
 
 
-    <div class="education-box">
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <div class="year">
+                    CURRENT
+                </div>
+
+                <h3>
+                    Doctor of Veterinary Medicine (DVM)
+                </h3>
+
+                <p>
+                    University of Veterinary and Animal Sciences
+                    (UVAS), Lahore, Pakistan.
+                </p>
+
+            </div>
+
+        </div>
 
 
-        <p>
+        <div class="timeline-item">
 
-            <strong>
-                Qualification:
-            </strong>
+            <div class="timeline-dot"></div>
 
-            Doctor of Veterinary Medicine (DVM) Student
+            <div class="timeline-card">
 
-        </p>
+                <div class="year">
+                    FIELD OF STUDY
+                </div>
 
+                <h3>
+                    Veterinary Medicine
+                </h3>
 
-        <p>
+                <p>
+                    Studying animal health, anatomy, physiology,
+                    pathology, pharmacology, microbiology, nutrition,
+                    animal welfare and related veterinary sciences.
+                </p>
 
-            <strong>
-                Institute:
-            </strong>
+            </div>
 
-            University of Veterinary and Animal Sciences
-            (UVAS)
-
-        </p>
-
-
-        <p>
-
-            <strong>
-                Location:
-            </strong>
-
-            Lahore, Pakistan
-
-        </p>
-
+        </div>
 
     </div>
 
 </section>
 
 
+<!-- =========================================================
+     SKILLS
+========================================================= -->
 
-<!-- ================= ANIMAL GALLERY ================= -->
-
-<section
-    class="gallery"
-    id="gallery"
->
-
+<section class="skills" id="skills">
 
     <div class="section-title">
 
-        <h2>
-            Animal Gallery
-        </h2>
+        <h2>Professional Interests</h2>
 
         <p>
-            Exploring animals, veterinary care and animal welfare
+            Areas I am developing through my veterinary education.
         </p>
 
     </div>
 
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <div class="skill-icon">🐕</div>
+
+            <h3>Companion Animals</h3>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">🐄</div>
+
+            <h3>Livestock</h3>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">🩺</div>
+
+            <h3>Animal Health</h3>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">💉</div>
+
+            <h3>Preventive Care</h3>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">🥗</div>
+
+            <h3>Animal Nutrition</h3>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">❤️</div>
+
+            <h3>Animal Welfare</h3>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">🔬</div>
+
+            <h3>Veterinary Science</h3>
+
+        </div>
+
+
+        <div class="skill-card">
+
+            <div class="skill-icon">📖</div>
+
+            <h3>Continuous Learning</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ANIMAL GALLERY
+========================================================= -->
+
+<section class="gallery" id="gallery">
+
+    <div class="section-title">
+
+        <h2>Animal Gallery</h2>
+
+        <p>
+            A visual look at some of the animals connected with
+            veterinary medicine and animal care.
+        </p>
+
+    </div>
 
 
     <div class="gallery-grid">
@@ -878,9 +1272,7 @@ footer strong {
 
             <div class="gallery-info">
 
-                <h3>
-                    Dogs
-                </h3>
+                <h3>Dogs</h3>
 
                 <p>
                     Companion animal care
@@ -889,7 +1281,6 @@ footer strong {
             </div>
 
         </div>
-
 
 
         <!-- CAT -->
@@ -906,9 +1297,7 @@ footer strong {
 
             <div class="gallery-info">
 
-                <h3>
-                    Cats
-                </h3>
+                <h3>Cats</h3>
 
                 <p>
                     Feline health and welfare
@@ -917,7 +1306,6 @@ footer strong {
             </div>
 
         </div>
-
 
 
         <!-- CATTLE -->
@@ -934,9 +1322,7 @@ footer strong {
 
             <div class="gallery-info">
 
-                <h3>
-                    Cattle
-                </h3>
+                <h3>Cattle</h3>
 
                 <p>
                     Livestock health and management
@@ -945,7 +1331,6 @@ footer strong {
             </div>
 
         </div>
-
 
 
         <!-- HORSE -->
@@ -962,9 +1347,7 @@ footer strong {
 
             <div class="gallery-info">
 
-                <h3>
-                    Horses
-                </h3>
+                <h3>Horses</h3>
 
                 <p>
                     Equine care and welfare
@@ -973,7 +1356,6 @@ footer strong {
             </div>
 
         </div>
-
 
 
         <!-- SHEEP -->
@@ -990,9 +1372,7 @@ footer strong {
 
             <div class="gallery-info">
 
-                <h3>
-                    Sheep
-                </h3>
+                <h3>Sheep</h3>
 
                 <p>
                     Small ruminant management
@@ -1001,7 +1381,6 @@ footer strong {
             </div>
 
         </div>
-
 
 
         <!-- BIRD -->
@@ -1018,9 +1397,7 @@ footer strong {
 
             <div class="gallery-info">
 
-                <h3>
-                    Birds
-                </h3>
+                <h3>Birds</h3>
 
                 <p>
                     Avian health and care
@@ -1030,33 +1407,26 @@ footer strong {
 
         </div>
 
-
     </div>
 
 </section>
 
 
+<!-- =========================================================
+     VETERINARY KNOWLEDGE
+========================================================= -->
 
-<!-- ================= SERVICES ================= -->
-
-<section
-    class="services"
-    id="services"
->
-
+<section class="services" id="services">
 
     <div class="section-title">
 
-        <h2>
-            Veterinary Knowledge
-        </h2>
+        <h2>Veterinary Knowledge</h2>
 
         <p>
-            Educational information about animal health and care
+            Educational areas related to animal health and responsible care.
         </p>
 
     </div>
-
 
 
     <div class="service-grid">
@@ -1064,234 +1434,181 @@ footer strong {
 
         <div class="service-card">
 
-            <div class="service-icon">
-                🩺
-            </div>
+            <div class="service-icon">🩺</div>
 
-            <h3>
-                Animal Health
-            </h3>
+            <h3>Animal Health</h3>
 
             <p>
-
-                Educational information about common
-                animal health concerns and preventive care.
-
+                Educational information about common animal health
+                concerns and basic preventive care.
             </p>
 
         </div>
 
 
-
         <div class="service-card">
 
-            <div class="service-icon">
-                💉
-            </div>
+            <div class="service-icon">💉</div>
 
-            <h3>
-                Vaccination
-            </h3>
+            <h3>Vaccination</h3>
 
             <p>
-
-                General information about vaccination
+                General educational information about vaccination
                 and preventive animal healthcare.
-
             </p>
 
         </div>
-
 
 
         <div class="service-card">
 
-            <div class="service-icon">
-                🥗
-            </div>
+            <div class="service-icon">🥗</div>
 
-            <h3>
-                Animal Nutrition
-            </h3>
+            <h3>Animal Nutrition</h3>
 
             <p>
-
-                Basic information about nutrition,
-                feeding and healthy animal management.
-
+                Basic information about nutrition, feeding and
+                healthy animal management.
             </p>
 
         </div>
-
 
 
         <div class="service-card">
 
-            <div class="service-icon">
-                🐕
-            </div>
+            <div class="service-icon">🐕</div>
 
-            <h3>
-                Pet Care
-            </h3>
+            <h3>Pet Care</h3>
 
             <p>
-
-                Educational guidance about hygiene,
-                daily care and responsible pet ownership.
-
+                Educational guidance about hygiene, daily care
+                and responsible pet ownership.
             </p>
 
         </div>
-
 
 
         <div class="service-card">
 
-            <div class="service-icon">
-                🐄
-            </div>
+            <div class="service-icon">🐄</div>
 
-            <h3>
-                Livestock Care
-            </h3>
+            <h3>Livestock Care</h3>
 
             <p>
-
-                Basic information about livestock
-                management, welfare and responsible care.
-
+                Basic information about livestock management,
+                welfare and responsible care.
             </p>
 
         </div>
-
 
 
         <div class="service-card">
 
-            <div class="service-icon">
-                📚
-            </div>
+            <div class="service-icon">📚</div>
 
-            <h3>
-                Veterinary Education
-            </h3>
+            <h3>Veterinary Education</h3>
 
             <p>
-
-                Easy-to-understand veterinary educational
-                content for students and animal owners.
-
+                Easy-to-understand educational content for
+                students and animal owners.
             </p>
 
         </div>
-
 
     </div>
 
 </section>
 
 
+<!-- =========================================================
+     QUOTE
+========================================================= -->
 
-<!-- ================= CONTACT ================= -->
+<section class="quote-section">
 
-<section
-    class="contact"
-    id="contact"
->
+    <h2>
+        “The greatness of a nation and its moral progress
+        can be judged by the way its animals are treated.”
+    </h2>
 
+    <p>
+        — Inspired by the principle of animal welfare
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact" id="contact">
 
     <div class="section-title">
 
-        <h2>
-            Contact Me
-        </h2>
+        <h2>Let's Connect</h2>
 
         <p>
-            Feel free to get in touch
+            Feel free to get in touch with me.
         </p>
 
     </div>
 
 
-
     <div class="contact-box">
 
-
-        <div class="contact-item">
-
-            <strong>
-                📱 Phone
-            </strong>
-
-            <br>
-
-            <a href="tel:03136725927">
-
-                03136725927
-
-            </a>
-
-        </div>
+        <div class="contact-grid">
 
 
+            <div class="contact-item">
 
-        <div class="contact-item">
+                <strong>📱 Phone</strong>
 
-            <strong>
-                📧 Email
-            </strong>
+                <a href="tel:03136725927">
+                    03136725927
+                </a>
 
-            <br>
-
-            <a href="mailto:raeessaadshahid@gmail.com">
-
-                raeessaadshahid@gmail.com
-
-            </a>
-
-        </div>
+            </div>
 
 
+            <div class="contact-item">
 
-        <div class="contact-item">
+                <strong>📧 Email</strong>
 
-            <strong>
-                🏢 Office
-            </strong>
+                <a href="mailto:raeessaadshahid@gmail.com">
+                    raeessaadshahid@gmail.com
+                </a>
 
-            <br>
-
-            Lahore, Pakistan
-
-        </div>
+            </div>
 
 
+            <div class="contact-item">
 
-        <div class="contact-item">
+                <strong>🏢 Office</strong>
 
-            <strong>
-                📸 Instagram
-            </strong>
+                Lahore, Pakistan
 
-            <br>
+            </div>
 
-            <a
-                href="https://www.instagram.com/call.me.saadi"
-                target="_blank"
-                rel="noopener"
-            >
 
-                @call.me.saadi
+            <div class="contact-item">
 
-            </a>
+                <strong>📸 Instagram</strong>
+
+                <a
+                    href="https://www.instagram.com/call.me.saadi"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    @call.me.saadi
+                </a>
+
+            </div>
 
         </div>
-
 
 
         <div class="contact-buttons">
-
 
             <a
                 href="https://wa.me/923136725927"
@@ -1299,11 +1616,8 @@ footer strong {
                 target="_blank"
                 rel="noopener"
             >
-
-                WhatsApp Me
-
+                💬 WhatsApp Me
             </a>
-
 
 
             <a
@@ -1312,72 +1626,63 @@ footer strong {
                 target="_blank"
                 rel="noopener"
             >
-
-                Instagram
-
+                📸 Instagram
             </a>
-
 
 
             <a
                 href="mailto:raeessaadshahid@gmail.com"
                 class="btn primary"
             >
-
-                Send Email
-
+                ✉️ Send Email
             </a>
 
-
         </div>
-
 
     </div>
 
 
-
     <div class="disclaimer">
 
-        <strong>
-            Important:
-        </strong>
+        <strong>Important:</strong>
 
         I am currently a DVM student at UVAS Lahore.
-
         The information presented on this website is for
         general educational purposes and does not replace
         professional veterinary consultation.
 
     </div>
 
-
 </section>
 
 
-
-<!-- ================= FOOTER ================= -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer>
 
     <p>
-
-        © 2026
-
-        <strong>
-            Vet Saad Shahid
-        </strong>
-
+        © 2026 <strong>Vet Saad Shahid</strong>
     </p>
 
     <p>
-
         DVM Student • UVAS Lahore
-
     </p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
 
 </footer>
 
-
 </body>
-
 </html>

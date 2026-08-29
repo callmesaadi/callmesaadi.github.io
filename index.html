@@ -6,6 +6,9 @@
 <meta name="description" content="Vet Saad Shahid - DVM Student at UVAS Lahore. Veterinary medicine, animal health, welfare and education.">
 <title>Vet Saad Shahid | DVM Student • UVAS Lahore</title>
 <style>
+/* =========================================================
+   RESET
+========================================================= */
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +30,9 @@ a {
 img {
     max-width: 100%;
 }
+/* =========================================================
+   COLORS
+========================================================= */
 :root {
     --green: #087f5b;
     --dark-green: #12372a;
@@ -36,7 +42,9 @@ img {
     --muted: #6b7280;
     --white: #ffffff;
 }
-/* ================= NAVIGATION ================= */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 header {
     position: sticky;
     top: 0;
@@ -69,7 +77,9 @@ nav a {
 nav a:hover {
     color: var(--green);
 }
-/* ================= HERO ================= */
+/* =========================================================
+   HERO
+========================================================= */
 .hero {
     min-height: 90vh;
     padding: 80px 7%;
@@ -145,7 +155,9 @@ nav a:hover {
     color: white;
     border: 2px solid #25d366;
 }
-/* ================= HERO PHOTO ================= */
+/* =========================================================
+   PROFILE PHOTO
+========================================================= */
 .photo-container {
     position: relative;
 }
@@ -156,8 +168,7 @@ nav a:hover {
     object-position: center;
     border-radius: 28px;
     border: 7px solid white;
-    box-shadow:
-        0 25px 60px rgba(0,0,0,.18);
+    box-shadow: 0 25px 60px rgba(0,0,0,.18);
     display: block;
     transition: .4s;
 }
@@ -180,7 +191,9 @@ nav a:hover {
     color: var(--green);
     font-size: 13px;
 }
-/* ================= GENERAL SECTIONS ================= */
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
 section {
     padding: 95px 7%;
 }
@@ -198,7 +211,9 @@ section {
     max-width: 650px;
     margin: auto;
 }
-/* ================= ABOUT ================= */
+/* =========================================================
+   ABOUT
+========================================================= */
 .about {
     background: white;
 }
@@ -229,7 +244,9 @@ section {
     font-size: 22px;
     margin-bottom: 10px;
 }
-/* ================= EDUCATION ================= */
+/* =========================================================
+   EDUCATION
+========================================================= */
 .education {
     background: #f7faf9;
 }
@@ -277,7 +294,9 @@ section {
     font-weight: bold;
     font-size: 14px;
 }
-/* ================= SKILLS ================= */
+/* =========================================================
+   SKILLS
+========================================================= */
 .skills {
     background: white;
 }
@@ -308,7 +327,9 @@ section {
     color: var(--green);
     font-size: 18px;
 }
-/* ================= ANIMAL GALLERY ================= */
+/* =========================================================
+   ANIMAL GALLERY
+========================================================= */
 .gallery {
     background: var(--soft-green);
 }
@@ -365,7 +386,9 @@ section {
     color: #e5e7eb;
     font-size: 14px;
 }
-/* ================= VETERINARY KNOWLEDGE ================= */
+/* =========================================================
+   VETERINARY KNOWLEDGE
+========================================================= */
 .services {
     background: white;
 }
@@ -395,7 +418,9 @@ section {
     color: var(--green);
     margin-bottom: 10px;
 }
-/* ================= QUOTE ================= */
+/* =========================================================
+   QUOTE
+========================================================= */
 .quote-section {
     background:
         linear-gradient(
@@ -417,7 +442,9 @@ section {
     margin-top: 18px;
     color: #d8f5e9;
 }
-/* ================= CONTACT ================= */
+/* =========================================================
+   CONTACT
+========================================================= */
 .contact {
     background: #12372a;
     color: white;
@@ -455,7 +482,7 @@ section {
 .contact-item a {
     color: var(--green);
 }
-/* INCREASED SPACE BETWEEN BUTTONS */
+/* BUTTON GAP */
 .contact-buttons {
     display: flex;
     justify-content: center;
@@ -468,7 +495,9 @@ section {
     min-width: 155px;
     text-align: center;
 }
-/* ================= DISCLAIMER ================= */
+/* =========================================================
+   DISCLAIMER
+========================================================= */
 .disclaimer {
     max-width: 950px;
     margin: 35px auto 0;
@@ -479,7 +508,9 @@ section {
     text-align: center;
     font-size: 14px;
 }
-/* ================= FOOTER ================= */
+/* =========================================================
+   FOOTER
+========================================================= */
 footer {
     background: #0b241b;
     color: #d1d5db;
@@ -496,7 +527,9 @@ footer strong {
     color: #b7e8d5;
     margin: 0 8px;
 }
-/* ================= ANIMATION ================= */
+/* =========================================================
+   ANIMATION
+========================================================= */
 .fade-up {
     animation: fadeUp .8s ease both;
 }
@@ -510,7 +543,9 @@ footer strong {
         transform: translateY(0);
     }
 }
-/* ================= TABLET ================= */
+/* =========================================================
+   TABLET
+========================================================= */
 @media(max-width: 950px) {
     header {
         padding: 15px 5%;
@@ -556,7 +591,9 @@ footer strong {
         grid-template-columns: 1fr;
     }
 }
-/* ================= MOBILE ================= */
+/* =========================================================
+   MOBILE
+========================================================= */
 @media(max-width: 650px) {
     header {
         flex-direction: column;
@@ -626,7 +663,9 @@ footer strong {
 </style>
 </head>
 <body>
-<!-- ================= HEADER ================= -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
 <header>
     <div class="logo">
         🐾 VET SAAD SHAHID
@@ -641,7 +680,9 @@ footer strong {
         <a href="#contact">Contact</a>
     </nav>
 </header>
-<!-- ================= HERO ================= -->
+<!-- =========================================================
+     HERO
+========================================================= -->
 <section class="hero" id="home">
     <div class="hero-content">
         <div class="hero-text fade-up">
@@ -676,12 +717,16 @@ footer strong {
             >
             <div class="photo-label">
                 Saad Shahid
-                <span>DVM Student • UVAS Lahore</span>
+                <span>
+                    DVM Student • UVAS Lahore
+                </span>
             </div>
         </div>
     </div>
 </section>
-<!-- ================= ABOUT ================= -->
+<!-- =========================================================
+     ABOUT
+========================================================= -->
 <section class="about" id="about">
     <div class="section-title">
         <h2>About Me</h2>
@@ -728,7 +773,9 @@ footer strong {
         </div>
     </div>
 </section>
-<!-- ================= EDUCATION ================= -->
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
 <section class="education" id="education">
     <div class="section-title">
         <h2>Education</h2>
@@ -770,7 +817,9 @@ footer strong {
         </div>
     </div>
 </section>
-<!-- ================= SKILLS ================= -->
+<!-- =========================================================
+     SKILLS
+========================================================= -->
 <section class="skills" id="skills">
     <div class="section-title">
         <h2>Professional Interests</h2>
@@ -813,7 +862,9 @@ footer strong {
         </div>
     </div>
 </section>
-<!-- ================= ANIMAL GALLERY ================= -->
+<!-- =========================================================
+     ANIMAL GALLERY
+========================================================= -->
 <section class="gallery" id="gallery">
     <div class="section-title">
         <h2>Animal Gallery</h2>
@@ -826,84 +877,98 @@ footer strong {
         <!-- DOG -->
         <div class="gallery-card">
             <img
-                src="_IMG_8241.jpeg"
+                src="IMG_8241.jpeg"
                 alt="Dog"
                 loading="lazy"
             >
             <div class="gallery-overlay"></div>
             <div class="gallery-info">
                 <h3>Dogs</h3>
-                <p>Companion animal care</p>
+                <p>
+                    Companion animal care
+                </p>
             </div>
         </div>
         <!-- CAT -->
         <div class="gallery-card">
             <img
-                src="_IMG_4332.jpeg"
+                src="IMG_4332.jpeg"
                 alt="Cat"
                 loading="lazy"
             >
             <div class="gallery-overlay"></div>
             <div class="gallery-info">
                 <h3>Cats</h3>
-                <p>Feline health and welfare</p>
+                <p>
+                    Feline health and welfare
+                </p>
             </div>
         </div>
         <!-- CATTLE -->
         <div class="gallery-card">
             <img
-                src="_IMG_2744.jpeg"
+                src="IMG_2744.jpeg"
                 alt="Cattle"
                 loading="lazy"
             >
             <div class="gallery-overlay"></div>
             <div class="gallery-info">
                 <h3>Cattle</h3>
-                <p>Livestock health and management</p>
+                <p>
+                    Livestock health and management
+                </p>
             </div>
         </div>
         <!-- HORSE -->
         <div class="gallery-card">
             <img
-                src="_IMG_2746.jpeg"
+                src="IMG_2746.jpeg"
                 alt="Horse"
                 loading="lazy"
             >
             <div class="gallery-overlay"></div>
             <div class="gallery-info">
                 <h3>Horses</h3>
-                <p>Equine care and welfare</p>
+                <p>
+                    Equine care and welfare
+                </p>
             </div>
         </div>
         <!-- SHEEP -->
         <div class="gallery-card">
             <img
-                src="_IMG_2742.jpeg"
+                src="IMG_2742.jpeg"
                 alt="Sheep"
                 loading="lazy"
             >
             <div class="gallery-overlay"></div>
             <div class="gallery-info">
                 <h3>Sheep</h3>
-                <p>Small ruminant management</p>
+                <p>
+                    Small ruminant management
+                </p>
             </div>
         </div>
         <!-- BIRD -->
         <div class="gallery-card">
             <img
-                src="_IMG_2747.jpeg"
+                src="IMG_2747.jpeg"
                 alt="Bird"
                 loading="lazy"
             >
             <div class="gallery-overlay"></div>
             <div class="gallery-info">
                 <h3>Birds</h3>
-                <p>Avian health and care</p>
+                <p>
+                    Avian health and care
+                </p>
             </div>
         </div>
     </div>
 </section>
-<!-- ================= VETERINARY KNOWLEDGE ================= -->
+<!-- =========================================================
+     VETERINARY KNOWLEDGE
+========================================================= -->
 <section class="services" id="services">
     <div class="section-title">
         <h2>Veterinary Knowledge</h2>
@@ -962,7 +1027,9 @@ footer strong {
         </div>
     </div>
 </section>
-<!-- ================= QUOTE ================= -->
+<!-- =========================================================
+     QUOTE
+========================================================= -->
 <section class="quote-section">
     <h2>
         “The greatness of a nation and its moral progress
@@ -972,7 +1039,9 @@ footer strong {
         — Inspired by the principle of animal welfare
     </p>
 </section>
-<!-- ================= CONTACT ================= -->
+<!-- =========================================================
+     CONTACT
+========================================================= -->
 <section class="contact" id="contact">
     <div class="section-title">
         <h2>Let's Connect</h2>
@@ -1042,7 +1111,9 @@ footer strong {
         professional veterinary consultation.
     </div>
 </section>
-<!-- ================= FOOTER ================= -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 <footer>
     <p>
         © 2026 <strong>Vet Saad Shahid</strong>

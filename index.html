@@ -3,13 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Vet Saad Shahid — DVM Student at UVAS Lahore. Veterinary medicine, animal health, welfare, education and professional development.">
+
+<meta name="description"
+content="Vet Saad Shahid — DVM Student at UVAS Lahore. Veterinary medicine, animal health, welfare, education and professional development.">
+
 <meta name="theme-color" content="#087f5b">
+
 <title>Vet Saad Shahid | DVM Student • UVAS Lahore</title>
+
 <style>
+
 /* =========================================================
    ROOT
 ========================================================= */
+
 :root {
     --green: #087f5b;
     --green-dark: #075b43;
@@ -23,6 +30,7 @@
     --shadow: 0 18px 55px rgba(15,50,38,.10);
     --radius: 24px;
 }
+
 body.dark {
     --bg: #0c1713;
     --card: #12221b;
@@ -32,18 +40,22 @@ body.dark {
     --header: rgba(12,23,19,.90);
     --shadow: 0 18px 55px rgba(0,0,0,.35);
 }
+
 /* =========================================================
    RESET
 ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--bg);
@@ -52,32 +64,43 @@ body {
     overflow-x: hidden;
     transition: background .3s, color .3s;
 }
+
 img {
     max-width: 100%;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
-button {
+
+button,
+input,
+textarea {
     font-family: inherit;
 }
+
 /* =========================================================
    SCROLLBAR
 ========================================================= */
+
 ::-webkit-scrollbar {
     width: 9px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--bg);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--green);
     border-radius: 20px;
 }
+
 /* =========================================================
    HEADER
 ========================================================= */
+
 header {
     position: sticky;
     top: 0;
@@ -93,6 +116,7 @@ header {
     justify-content: space-between;
     transition: .3s;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -102,6 +126,7 @@ header {
     font-weight: 900;
     letter-spacing: .3px;
 }
+
 .logo-mark {
     width: 38px;
     height: 38px;
@@ -112,20 +137,24 @@ header {
     color: white;
     box-shadow: 0 8px 20px rgba(8,127,91,.22);
 }
+
 nav {
     display: flex;
     align-items: center;
     gap: 22px;
 }
+
 nav a {
     color: var(--muted);
     font-size: 14px;
     font-weight: 700;
     transition: .25s;
 }
+
 nav a:hover {
     color: var(--green);
 }
+
 .theme-toggle {
     border: 1px solid var(--border);
     background: var(--card);
@@ -139,12 +168,15 @@ nav a:hover {
     place-items: center;
     transition: .25s;
 }
+
 .theme-toggle:hover {
     transform: rotate(12deg) scale(1.05);
 }
+
 /* =========================================================
    HERO
 ========================================================= */
+
 .hero {
     min-height: calc(100vh - 70px);
     padding: 80px 6%;
@@ -152,11 +184,13 @@ nav a:hover {
     align-items: center;
     position: relative;
     overflow: hidden;
+
     background:
         radial-gradient(circle at 80% 15%, rgba(8,127,91,.16), transparent 28%),
         radial-gradient(circle at 10% 85%, rgba(8,127,91,.08), transparent 25%),
         var(--bg);
 }
+
 .hero::before {
     content: "";
     position: absolute;
@@ -167,6 +201,7 @@ nav a:hover {
     right: -120px;
     bottom: -130px;
 }
+
 .hero-container {
     width: 100%;
     max-width: 1200px;
@@ -176,6 +211,7 @@ nav a:hover {
     align-items: center;
     gap: 70px;
 }
+
 .hero-badge {
     display: inline-flex;
     align-items: center;
@@ -191,26 +227,31 @@ nav a:hover {
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
+
 .hero h1 {
     font-size: clamp(43px, 6vw, 72px);
     line-height: 1.02;
     letter-spacing: -2px;
     margin-bottom: 22px;
 }
+
 .hero h1 span {
     color: var(--green);
 }
+
 .hero-description {
     max-width: 650px;
     color: var(--muted);
     font-size: 17px;
 }
+
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     margin-top: 30px;
 }
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -223,35 +264,44 @@ nav a:hover {
     font-size: 14px;
     border: 2px solid transparent;
     transition: .3s;
+    cursor: pointer;
 }
+
 .btn:hover {
     transform: translateY(-4px);
 }
+
 .btn-primary {
     background: var(--green);
     color: white;
     box-shadow: 0 12px 28px rgba(8,127,91,.22);
 }
+
 .btn-primary:hover {
     background: var(--green-dark);
 }
+
 .btn-outline {
     border-color: var(--green);
     color: var(--green);
     background: transparent;
 }
+
 .btn-outline:hover {
     background: var(--green-light);
 }
+
 /* =========================================================
    HERO PHOTO
 ========================================================= */
+
 .hero-photo-wrap {
     position: relative;
     max-width: 520px;
     width: 100%;
     margin-left: auto;
 }
+
 .hero-photo-wrap::before {
     content: "";
     position: absolute;
@@ -263,6 +313,7 @@ nav a:hover {
     left: 18px;
     opacity: .12;
 }
+
 .profile-photo {
     position: relative;
     z-index: 2;
@@ -276,9 +327,11 @@ nav a:hover {
     display: block;
     transition: .5s;
 }
+
 .profile-photo:hover {
     transform: translateY(-7px);
 }
+
 .profile-card {
     position: absolute;
     z-index: 4;
@@ -290,23 +343,28 @@ nav a:hover {
     box-shadow: var(--shadow);
     border: 1px solid var(--border);
 }
+
 .profile-card strong {
     display: block;
     font-size: 17px;
     color: var(--text);
 }
+
 .profile-card span {
     display: block;
     color: var(--green);
     font-size: 12px;
     font-weight: 800;
 }
+
 /* =========================================================
    STATS
 ========================================================= */
+
 .stats {
     padding: 0 6% 80px;
 }
+
 .stats-container {
     max-width: 1050px;
     margin: auto;
@@ -314,6 +372,7 @@ nav a:hover {
     grid-template-columns: repeat(3,1fr);
     gap: 18px;
 }
+
 .stat {
     background: var(--card);
     border: 1px solid var(--border);
@@ -322,27 +381,33 @@ nav a:hover {
     text-align: center;
     box-shadow: 0 10px 35px rgba(0,0,0,.05);
 }
+
 .stat-number {
     color: var(--green);
     font-size: 30px;
     font-weight: 900;
 }
+
 .stat-label {
     color: var(--muted);
     font-size: 13px;
     font-weight: 700;
 }
+
 /* =========================================================
    SECTION
 ========================================================= */
+
 section:not(.hero) {
     padding: 100px 6%;
 }
+
 .section-heading {
     max-width: 700px;
     margin: 0 auto 55px;
     text-align: center;
 }
+
 .section-tag {
     color: var(--green);
     font-size: 12px;
@@ -351,21 +416,26 @@ section:not(.hero) {
     text-transform: uppercase;
     margin-bottom: 8px;
 }
+
 .section-heading h2 {
     font-size: clamp(32px, 4vw, 46px);
     line-height: 1.15;
     margin-bottom: 12px;
 }
+
 .section-heading p {
     color: var(--muted);
     font-size: 16px;
 }
+
 /* =========================================================
    ABOUT
 ========================================================= */
+
 .about {
     background: var(--card);
 }
+
 .about-grid {
     max-width: 1100px;
     margin: auto;
@@ -373,6 +443,7 @@ section:not(.hero) {
     grid-template-columns: 1fr 1fr;
     gap: 22px;
 }
+
 .about-card {
     padding: 32px;
     border-radius: var(--radius);
@@ -380,10 +451,12 @@ section:not(.hero) {
     border: 1px solid var(--border);
     transition: .35s;
 }
+
 .about-card:hover {
     transform: translateY(-7px);
     box-shadow: var(--shadow);
 }
+
 .about-icon {
     width: 55px;
     height: 55px;
@@ -394,26 +467,32 @@ section:not(.hero) {
     font-size: 27px;
     margin-bottom: 17px;
 }
+
 .about-card h3 {
     color: var(--text);
     font-size: 21px;
     margin-bottom: 8px;
 }
+
 .about-card p {
     color: var(--muted);
     font-size: 15px;
 }
+
 /* =========================================================
    EDUCATION
 ========================================================= */
+
 .education {
     background: var(--bg);
 }
+
 .timeline {
     max-width: 850px;
     margin: auto;
     position: relative;
 }
+
 .timeline::before {
     content: "";
     position: absolute;
@@ -423,14 +502,17 @@ section:not(.hero) {
     width: 3px;
     background: rgba(8,127,91,.18);
 }
+
 .timeline-item {
     position: relative;
     padding-left: 65px;
     margin-bottom: 30px;
 }
+
 .timeline-item:last-child {
     margin-bottom: 0;
 }
+
 .timeline-dot {
     position: absolute;
     left: 7px;
@@ -442,6 +524,7 @@ section:not(.hero) {
     border: 6px solid var(--green-light);
     box-shadow: 0 0 0 1px rgba(8,127,91,.12);
 }
+
 .timeline-card {
     background: var(--card);
     padding: 30px;
@@ -449,6 +532,7 @@ section:not(.hero) {
     border: 1px solid var(--border);
     box-shadow: 0 10px 35px rgba(0,0,0,.05);
 }
+
 .timeline-year {
     color: var(--green);
     font-size: 12px;
@@ -456,20 +540,25 @@ section:not(.hero) {
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
+
 .timeline-card h3 {
     margin-bottom: 7px;
     font-size: 21px;
 }
+
 .timeline-card p {
     color: var(--muted);
     font-size: 15px;
 }
+
 /* =========================================================
    INTERESTS
 ========================================================= */
+
 .interests {
     background: var(--card);
 }
+
 .interests-grid {
     max-width: 1100px;
     margin: auto;
@@ -477,6 +566,7 @@ section:not(.hero) {
     grid-template-columns: repeat(4,1fr);
     gap: 18px;
 }
+
 .interest {
     padding: 28px 18px;
     text-align: center;
@@ -485,26 +575,32 @@ section:not(.hero) {
     border: 1px solid var(--border);
     transition: .3s;
 }
+
 .interest:hover {
     transform: translateY(-7px);
     box-shadow: var(--shadow);
 }
+
 .interest-icon {
     font-size: 36px;
     margin-bottom: 10px;
 }
+
 .interest h3 {
     font-size: 16px;
     color: var(--text);
 }
+
 /* =========================================================
    GALLERY
 ========================================================= */
+
 .gallery {
     background:
         linear-gradient(rgba(8,127,91,.035), rgba(8,127,91,.035)),
         var(--bg);
 }
+
 .gallery-grid {
     max-width: 1180px;
     margin: auto;
@@ -512,6 +608,7 @@ section:not(.hero) {
     grid-template-columns: repeat(3,1fr);
     gap: 22px;
 }
+
 .gallery-card {
     position: relative;
     height: 330px;
@@ -521,10 +618,12 @@ section:not(.hero) {
     box-shadow: 0 12px 35px rgba(0,0,0,.10);
     transition: .4s;
 }
+
 .gallery-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 45px rgba(0,0,0,.15);
 }
+
 .gallery-card img {
     width: 100%;
     height: 100%;
@@ -532,9 +631,11 @@ section:not(.hero) {
     display: block;
     transition: .7s;
 }
+
 .gallery-card:hover img {
     transform: scale(1.09);
 }
+
 .gallery-gradient {
     position: absolute;
     inset: 0;
@@ -545,6 +646,7 @@ section:not(.hero) {
             rgba(0,0,0,.05) 65%
         );
 }
+
 .gallery-info {
     position: absolute;
     left: 24px;
@@ -553,21 +655,26 @@ section:not(.hero) {
     color: white;
     z-index: 2;
 }
+
 .gallery-info h3 {
     font-size: 25px;
     line-height: 1.2;
     margin-bottom: 3px;
 }
+
 .gallery-info p {
     font-size: 13px;
     color: #e4ebe7;
 }
+
 /* =========================================================
    KNOWLEDGE
 ========================================================= */
+
 .knowledge {
     background: var(--card);
 }
+
 .knowledge-grid {
     max-width: 1100px;
     margin: auto;
@@ -575,6 +682,7 @@ section:not(.hero) {
     grid-template-columns: repeat(3,1fr);
     gap: 22px;
 }
+
 .article-card {
     padding: 30px;
     border-radius: 22px;
@@ -582,62 +690,77 @@ section:not(.hero) {
     border: 1px solid var(--border);
     transition: .35s;
 }
+
 .article-card:hover {
     transform: translateY(-7px);
     box-shadow: var(--shadow);
 }
+
 .article-number {
     color: var(--green);
     font-size: 13px;
     font-weight: 900;
     margin-bottom: 15px;
 }
+
 .article-card h3 {
     font-size: 20px;
     margin-bottom: 9px;
 }
+
 .article-card p {
     color: var(--muted);
     font-size: 14px;
     margin-bottom: 15px;
 }
+
 .article-link {
     color: var(--green);
     font-size: 13px;
     font-weight: 900;
 }
+
 /* =========================================================
    QUOTE
 ========================================================= */
+
 .quote-section {
     padding: 90px 6% !important;
     text-align: center;
+
     background:
         radial-gradient(circle at 20% 30%, rgba(255,255,255,.10), transparent 25%),
         linear-gradient(135deg, #12372a, #087f5b);
+
     color: white;
 }
+
 .quote-icon {
     font-size: 45px;
     margin-bottom: 15px;
 }
+
 .quote-section h2 {
     max-width: 850px;
     margin: auto;
     font-size: clamp(25px,4vw,39px);
     line-height: 1.35;
 }
+
 .quote-section p {
     margin-top: 18px;
     color: #d7f3e7;
     font-size: 14px;
 }
+
 /* =========================================================
    CONTACT
 ========================================================= */
+
 .contact {
     background: var(--bg);
 }
+
 .contact-box {
     max-width: 1050px;
     margin: auto;
@@ -647,17 +770,20 @@ section:not(.hero) {
     padding: 42px;
     box-shadow: var(--shadow);
 }
+
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 17px;
 }
+
 .contact-item {
     padding: 21px;
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 17px;
 }
+
 .contact-label {
     color: var(--green);
     font-size: 12px;
@@ -666,11 +792,94 @@ section:not(.hero) {
     letter-spacing: .7px;
     margin-bottom: 3px;
 }
-.contact-item a {
+
+.contact-item a,
+.contact-item span {
     color: var(--text);
     font-weight: 700;
     word-break: break-word;
 }
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+.contact-form {
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 1px solid var(--border);
+}
+
+.contact-form h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.form-description {
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 13px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    outline: none;
+    font-size: 15px;
+    transition: .25s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(8,127,91,.10);
+}
+
+.form-group textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-submit {
+    width: 100%;
+    border: none;
+}
+
+.form-status {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    min-height: 24px;
+}
+
+.form-status.success {
+    color: var(--green);
+}
+
+.form-status.error {
+    color: #c62828;
+}
+
 .contact-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -678,19 +887,23 @@ section:not(.hero) {
     gap: 18px;
     margin-top: 32px;
 }
+
 .btn-whatsapp {
     background: #25d366;
     color: white;
 }
+
 .btn-instagram {
     background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
     color: white;
     border: none;
 }
+
 .btn-email {
     background: var(--green);
     color: white;
 }
+
 .disclaimer {
     max-width: 950px;
     margin: 28px auto 0;
@@ -701,24 +914,29 @@ section:not(.hero) {
     font-size: 13px;
     text-align: center;
 }
+
 /* =========================================================
    FOOTER
 ========================================================= */
+
 footer {
     background: #091b14;
     color: #aebdb6;
     text-align: center;
     padding: 38px 6%;
 }
+
 footer strong {
     color: white;
 }
+
 .footer-logo {
     color: #8ce0c0;
     font-size: 19px;
     font-weight: 900;
     margin-bottom: 5px;
 }
+
 .footer-links {
     margin-top: 14px;
     display: flex;
@@ -726,17 +944,21 @@ footer strong {
     flex-wrap: wrap;
     gap: 18px;
 }
+
 .footer-links a {
     color: #b9c9c2;
     font-size: 13px;
     transition: .25s;
 }
+
 .footer-links a:hover {
     color: white;
 }
+
 /* =========================================================
    FLOATING WHATSAPP
 ========================================================= */
+
 .whatsapp-float {
     position: fixed;
     right: 22px;
@@ -754,20 +976,26 @@ footer strong {
     transition: .3s;
     animation: pulse 2.5s infinite;
 }
+
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
+
 @keyframes pulse {
+
     0%,100% {
         box-shadow: 0 12px 30px rgba(0,0,0,.20);
     }
+
     50% {
         box-shadow: 0 12px 35px rgba(37,211,102,.40);
     }
 }
+
 /* =========================================================
    BACK TO TOP
 ========================================================= */
+
 .back-top {
     position: fixed;
     right: 22px;
@@ -788,14 +1016,17 @@ footer strong {
     transform: translateY(10px);
     transition: .3s;
 }
+
 .back-top.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
+
 /* =========================================================
    ANIMATIONS
 ========================================================= */
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -803,56 +1034,73 @@ footer strong {
         opacity .8s ease,
         transform .8s ease;
 }
+
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
 /* =========================================================
    RESPONSIVE 1000px
 ========================================================= */
+
 @media(max-width:1000px) {
+
     header {
         padding: 14px 5%;
     }
+
     nav {
         gap: 14px;
     }
+
     nav a {
         font-size: 12px;
     }
+
     .hero {
         padding: 70px 5%;
     }
+
     .hero-container {
         gap: 45px;
     }
+
     .profile-photo {
         height: 470px;
     }
+
     .interests-grid {
         grid-template-columns: repeat(2,1fr);
     }
+
     .gallery-grid {
         grid-template-columns: repeat(2,1fr);
     }
+
     .knowledge-grid {
         grid-template-columns: repeat(2,1fr);
     }
 }
+
 /* =========================================================
    RESPONSIVE 700px
 ========================================================= */
+
 @media(max-width:700px) {
+
     header {
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
         padding: 12px 4%;
     }
+
     .logo {
         width: 100%;
         justify-content: center;
     }
+
     nav {
         order: 3;
         width: 100%;
@@ -860,140 +1108,183 @@ footer strong {
         flex-wrap: wrap;
         gap: 11px;
     }
+
     nav a {
         font-size: 11px;
     }
+
     .theme-toggle {
         position: absolute;
         right: 15px;
         top: 12px;
     }
+
     .hero {
         padding: 60px 6% 75px;
     }
+
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 45px;
     }
+
     .hero-description {
         margin: auto;
         font-size: 16px;
     }
+
     .hero-buttons {
         justify-content: center;
     }
+
     .hero-photo-wrap {
         margin: auto;
     }
+
     .profile-photo {
         height: 420px;
         border-radius: 25px;
     }
+
     .profile-card {
         left: 12px;
         bottom: 18px;
     }
+
     .stats {
         padding: 0 6% 60px;
     }
+
     .stats-container {
         grid-template-columns: 1fr;
     }
+
     section:not(.hero) {
         padding: 75px 6%;
     }
+
     .about-grid {
         grid-template-columns: 1fr;
     }
+
     .interests-grid {
         grid-template-columns: 1fr 1fr;
     }
+
     .gallery-grid {
         grid-template-columns: 1fr;
     }
+
     .gallery-card {
         height: 300px;
     }
+
     .knowledge-grid {
         grid-template-columns: 1fr;
     }
+
     .contact-box {
         padding: 24px;
     }
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
     .contact-buttons {
         flex-direction: column;
         gap: 12px;
     }
+
     .contact-buttons .btn {
         width: 100%;
     }
 }
+
 /* =========================================================
    RESPONSIVE 450px
 ========================================================= */
+
 @media(max-width:450px) {
+
     .hero h1 {
         font-size: 39px;
         letter-spacing: -1.3px;
     }
+
     .hero-badge {
         font-size: 10px;
     }
+
     .profile-photo {
         height: 360px;
         border-width: 6px;
     }
+
     .profile-card {
         padding: 13px 15px;
     }
+
     .profile-card strong {
         font-size: 15px;
     }
+
     .profile-card span {
         font-size: 10px;
     }
+
     .interests-grid {
         grid-template-columns: 1fr 1fr;
     }
+
     .interest {
         padding: 22px 10px;
     }
+
     .timeline-item {
         padding-left: 48px;
     }
+
     .timeline::before {
         left: 13px;
     }
+
     .timeline-dot {
         left: 1px;
     }
+
     .timeline-card {
         padding: 22px;
     }
+
     .whatsapp-float {
         right: 17px;
         bottom: 17px;
     }
+
     .back-top {
         right: 17px;
         bottom: 83px;
     }
 }
+
 </style>
 </head>
+
 <body>
+
 <!-- =========================================================
      HEADER
 ========================================================= -->
+
 <header>
+
     <a href="#home" class="logo">
         <span class="logo-mark">🐾</span>
         <span>VET SAAD SHAHID</span>
     </a>
+
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -1003,6 +1294,7 @@ footer strong {
         <a href="#knowledge">Knowledge</a>
         <a href="#contact">Contact</a>
     </nav>
+
     <button
         class="theme-toggle"
         id="themeToggle"
@@ -1011,23 +1303,32 @@ footer strong {
     >
         🌙
     </button>
+
 </header>
+
+
 <!-- =========================================================
      HERO
 ========================================================= -->
+
 <section class="hero" id="home">
+
     <div class="hero-container">
+
         <div class="hero-text reveal">
+
             <div class="hero-badge">
                 🩺 DVM STUDENT
                 <span>•</span>
                 UVAS LAHORE
             </div>
+
             <h1>
                 Veterinary Medicine.
                 <br>
                 <span>Passion. Purpose. Care.</span>
             </h1>
+
             <p class="hero-description">
                 I am Saad Shahid, a Doctor of Veterinary Medicine
                 student at the University of Veterinary and Animal
@@ -1035,456 +1336,792 @@ footer strong {
                 professional journey around animal health, welfare,
                 veterinary science and responsible animal care.
             </p>
+
             <div class="hero-buttons">
+
                 <a href="#about" class="btn btn-primary">
                     Explore My Journey →
                 </a>
+
                 <a href="#contact" class="btn btn-outline">
                     Let's Connect
                 </a>
+
             </div>
+
         </div>
+
+
         <div class="hero-photo-wrap reveal">
+
             <img
                 src="IMG_4626.jpeg"
                 alt="Saad Shahid - DVM Student"
                 class="profile-photo"
             >
+
             <div class="profile-card">
+
                 <strong>Saad Shahid</strong>
-                <span>DVM Student • UVAS Lahore</span>
+
+                <span>
+                    DVM Student • UVAS Lahore
+                </span>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
+
 <!-- =========================================================
      STATS
 ========================================================= -->
+
 <div class="stats">
+
     <div class="stats-container">
+
         <div class="stat reveal">
-            <div class="stat-number">DVM</div>
-            <div class="stat-label">Professional Degree</div>
+
+            <div class="stat-number">
+                DVM
+            </div>
+
+            <div class="stat-label">
+                Professional Degree
+            </div>
+
         </div>
+
+
         <div class="stat reveal">
-            <div class="stat-number">UVAS</div>
-            <div class="stat-label">Lahore, Pakistan</div>
+
+            <div class="stat-number">
+                UVAS
+            </div>
+
+            <div class="stat-label">
+                Lahore, Pakistan
+            </div>
+
         </div>
+
+
         <div class="stat reveal">
-            <div class="stat-number">🐾</div>
-            <div class="stat-label">Passion for Animal Care</div>
+
+            <div class="stat-number">
+                🐾
+            </div>
+
+            <div class="stat-label">
+                Passion for Animal Care
+            </div>
+
         </div>
+
     </div>
+
 </div>
+
+
 <!-- =========================================================
      ABOUT
 ========================================================= -->
+
 <section class="about" id="about">
+
     <div class="section-heading reveal">
-        <div class="section-tag">About Me</div>
-        <h2>Building a Career in Veterinary Medicine</h2>
+
+        <div class="section-tag">
+            About Me
+        </div>
+
+        <h2>
+            Building a Career in Veterinary Medicine
+        </h2>
+
         <p>
             A professional portfolio documenting my academic journey,
             interests and commitment to animal health.
         </p>
+
     </div>
+
+
     <div class="about-grid">
+
         <div class="about-card reveal">
-            <div class="about-icon">🐾</div>
-            <h3>Who I Am</h3>
+
+            <div class="about-icon">
+                🐾
+            </div>
+
+            <h3>
+                Who I Am
+            </h3>
+
             <p>
                 I am a Doctor of Veterinary Medicine student studying
                 at the University of Veterinary and Animal Sciences
                 (UVAS), Lahore.
             </p>
+
         </div>
+
+
         <div class="about-card reveal">
-            <div class="about-icon">🎯</div>
-            <h3>My Goal</h3>
+
+            <div class="about-icon">
+                🎯
+            </div>
+
+            <h3>
+                My Goal
+            </h3>
+
             <p>
                 My goal is to develop strong scientific and practical
                 skills and become a responsible veterinary professional
                 capable of contributing to animal health and welfare.
             </p>
+
         </div>
+
+
         <div class="about-card reveal">
-            <div class="about-icon">📚</div>
-            <h3>My Learning</h3>
+
+            <div class="about-icon">
+                📚
+            </div>
+
+            <h3>
+                My Learning
+            </h3>
+
             <p>
                 My studies cover areas including anatomy, physiology,
                 pathology, pharmacology, microbiology, nutrition,
                 animal health and veterinary science.
             </p>
+
         </div>
+
+
         <div class="about-card reveal">
-            <div class="about-icon">❤️</div>
-            <h3>My Passion</h3>
+
+            <div class="about-icon">
+                ❤️
+            </div>
+
+            <h3>
+                My Passion
+            </h3>
+
             <p>
                 I am interested in understanding animals, improving
                 animal welfare and continuously developing my knowledge
                 through veterinary education and practical learning.
             </p>
+
         </div>
+
     </div>
+
 </section>
+
+
 <!-- =========================================================
      EDUCATION
 ========================================================= -->
+
 <section class="education" id="education">
+
     <div class="section-heading reveal">
-        <div class="section-tag">Academic Journey</div>
-        <h2>Education</h2>
+
+        <div class="section-tag">
+            Academic Journey
+        </div>
+
+        <h2>
+            Education
+        </h2>
+
         <p>
             The foundation of my journey toward veterinary medicine.
         </p>
+
     </div>
+
+
     <div class="timeline">
+
         <div class="timeline-item reveal">
+
             <div class="timeline-dot"></div>
+
             <div class="timeline-card">
+
                 <div class="timeline-year">
                     CURRENT
                 </div>
+
                 <h3>
                     Doctor of Veterinary Medicine (DVM)
                 </h3>
+
                 <p>
                     University of Veterinary and Animal Sciences
                     (UVAS), Lahore, Pakistan.
                 </p>
+
             </div>
+
         </div>
+
+
         <div class="timeline-item reveal">
+
             <div class="timeline-dot"></div>
+
             <div class="timeline-card">
+
                 <div class="timeline-year">
                     FIELD OF STUDY
                 </div>
+
                 <h3>
                     Veterinary Medicine
                 </h3>
+
                 <p>
                     Developing knowledge in animal health, anatomy,
                     physiology, pathology, pharmacology, microbiology,
                     nutrition, welfare and related veterinary sciences.
                 </p>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
+
 <!-- =========================================================
      PROFESSIONAL INTERESTS
 ========================================================= -->
+
 <section class="interests" id="interests">
+
     <div class="section-heading reveal">
-        <div class="section-tag">What I Study</div>
-        <h2>Professional Interests</h2>
+
+        <div class="section-tag">
+            What I Study
+        </div>
+
+        <h2>
+            Professional Interests
+        </h2>
+
         <p>
             Areas of veterinary science that form part of my academic
             and professional development.
         </p>
+
     </div>
+
+
     <div class="interests-grid">
+
         <div class="interest reveal">
             <div class="interest-icon">🐕</div>
             <h3>Companion Animals</h3>
         </div>
+
         <div class="interest reveal">
             <div class="interest-icon">🐄</div>
             <h3>Livestock</h3>
         </div>
+
         <div class="interest reveal">
             <div class="interest-icon">🩺</div>
             <h3>Animal Health</h3>
         </div>
+
         <div class="interest reveal">
             <div class="interest-icon">💉</div>
             <h3>Preventive Care</h3>
         </div>
+
         <div class="interest reveal">
             <div class="interest-icon">🥗</div>
             <h3>Animal Nutrition</h3>
         </div>
+
         <div class="interest reveal">
             <div class="interest-icon">❤️</div>
             <h3>Animal Welfare</h3>
         </div>
+
         <div class="interest reveal">
             <div class="interest-icon">🔬</div>
             <h3>Veterinary Science</h3>
         </div>
+
         <div class="interest reveal">
             <div class="interest-icon">📖</div>
             <h3>Continuous Learning</h3>
         </div>
+
     </div>
+
 </section>
+
+
 <!-- =========================================================
      ANIMAL GALLERY
 ========================================================= -->
+
 <section class="gallery" id="gallery">
+
     <div class="section-heading reveal">
-        <div class="section-tag">Animal World</div>
-        <h2>Animal Gallery</h2>
+
+        <div class="section-tag">
+            Animal World
+        </div>
+
+        <h2>
+            Animal Gallery
+        </h2>
+
         <p>
             A visual collection representing the diverse animals
             connected with veterinary medicine and animal care.
         </p>
+
     </div>
+
+
     <div class="gallery-grid">
-        <!-- DOG -->
+
         <div class="gallery-card reveal">
+
             <img
                 src="IMG_8241.jpeg"
                 alt="Dog"
                 loading="lazy"
             >
+
             <div class="gallery-gradient"></div>
+
             <div class="gallery-info">
-                <h3>Dogs</h3>
+
+                <h3>
+                    Dogs
+                </h3>
+
                 <p>
                     Companion animal care
                 </p>
+
             </div>
+
         </div>
-        <!-- CAT -->
+
+
         <div class="gallery-card reveal">
+
             <img
                 src="IMG_4332.jpeg"
                 alt="Cat"
                 loading="lazy"
             >
+
             <div class="gallery-gradient"></div>
+
             <div class="gallery-info">
-                <h3>Cats</h3>
+
+                <h3>
+                    Cats
+                </h3>
+
                 <p>
                     Feline health and welfare
                 </p>
+
             </div>
+
         </div>
-        <!-- CATTLE -->
+
+
         <div class="gallery-card reveal">
+
             <img
                 src="IMG_2744.jpeg"
                 alt="Cattle"
                 loading="lazy"
             >
+
             <div class="gallery-gradient"></div>
+
             <div class="gallery-info">
-                <h3>Cattle</h3>
+
+                <h3>
+                    Cattle
+                </h3>
+
                 <p>
                     Livestock health and management
                 </p>
+
             </div>
+
         </div>
-        <!-- HORSE -->
+
+
         <div class="gallery-card reveal">
+
             <img
                 src="IMG_2746.jpeg"
                 alt="Horse"
                 loading="lazy"
             >
+
             <div class="gallery-gradient"></div>
+
             <div class="gallery-info">
-                <h3>Horses</h3>
+
+                <h3>
+                    Horses
+                </h3>
+
                 <p>
                     Equine care and welfare
                 </p>
+
             </div>
+
         </div>
-        <!-- SHEEP -->
+
+
         <div class="gallery-card reveal">
+
             <img
                 src="IMG_2742.jpeg"
                 alt="Sheep"
                 loading="lazy"
             >
+
             <div class="gallery-gradient"></div>
+
             <div class="gallery-info">
-                <h3>Sheep</h3>
+
+                <h3>
+                    Sheep
+                </h3>
+
                 <p>
                     Small ruminant management
                 </p>
+
             </div>
+
         </div>
-        <!-- BIRDS -->
+
+
         <div class="gallery-card reveal">
+
             <img
                 src="IMG_2747.jpeg"
                 alt="Bird"
                 loading="lazy"
             >
+
             <div class="gallery-gradient"></div>
+
             <div class="gallery-info">
-                <h3>Birds</h3>
+
+                <h3>
+                    Birds
+                </h3>
+
                 <p>
                     Avian health and care
                 </p>
+
             </div>
+
         </div>
+
     </div>
+
 </section>
+
+
 <!-- =========================================================
      VETERINARY KNOWLEDGE
 ========================================================= -->
+
 <section class="knowledge" id="knowledge">
+
     <div class="section-heading reveal">
-        <div class="section-tag">Learning & Education</div>
-        <h2>Veterinary Knowledge</h2>
+
+        <div class="section-tag">
+            Learning & Education
+        </div>
+
+        <h2>
+            Veterinary Knowledge
+        </h2>
+
         <p>
             Educational topics that reflect the areas I am studying
             and developing knowledge in.
         </p>
+
     </div>
+
+
     <div class="knowledge-grid">
+
         <div class="article-card reveal">
+
             <div class="article-number">
                 01 • ANIMAL HEALTH
             </div>
+
             <h3>
                 Preventive Animal Care
             </h3>
+
             <p>
                 Understanding preventive healthcare, hygiene,
                 observation and responsible animal management.
             </p>
+
             <div class="article-link">
                 Learn • Observe • Improve
             </div>
+
         </div>
+
+
         <div class="article-card reveal">
+
             <div class="article-number">
                 02 • NUTRITION
             </div>
+
             <h3>
                 Animal Nutrition
             </h3>
+
             <p>
                 Learning how balanced nutrition and appropriate
                 feeding practices support animal health and wellbeing.
             </p>
+
             <div class="article-link">
                 Science • Nutrition • Health
             </div>
+
         </div>
+
+
         <div class="article-card reveal">
+
             <div class="article-number">
                 03 • WELFARE
             </div>
+
             <h3>
                 Animal Welfare
             </h3>
+
             <p>
                 Exploring responsible treatment, welfare principles
                 and the importance of humane animal care.
             </p>
+
             <div class="article-link">
                 Welfare • Responsibility • Care
             </div>
+
         </div>
+
+
         <div class="article-card reveal">
+
             <div class="article-number">
                 04 • PREVENTION
             </div>
+
             <h3>
                 Vaccination & Prevention
             </h3>
+
             <p>
                 Developing an understanding of vaccination and
                 preventive approaches within veterinary healthcare.
             </p>
+
             <div class="article-link">
                 Prevention • Protection • Health
             </div>
+
         </div>
+
+
         <div class="article-card reveal">
+
             <div class="article-number">
                 05 • COMPANION ANIMALS
             </div>
+
             <h3>
                 Responsible Pet Care
             </h3>
+
             <p>
                 Learning about hygiene, nutrition, welfare and
                 responsible ownership of companion animals.
             </p>
+
             <div class="article-link">
                 Pets • Care • Welfare
             </div>
+
         </div>
+
+
         <div class="article-card reveal">
+
             <div class="article-number">
                 06 • VETERINARY SCIENCE
             </div>
+
             <h3>
                 Continuous Learning
             </h3>
+
             <p>
                 Building scientific knowledge and practical
                 understanding throughout my veterinary education.
             </p>
+
             <div class="article-link">
                 Study • Practice • Progress
             </div>
+
         </div>
+
     </div>
+
 </section>
+
+
 <!-- =========================================================
      QUOTE
 ========================================================= -->
+
 <section class="quote-section">
+
     <div class="quote-icon">
         ❝
     </div>
+
     <h2>
         “The greatness of a nation and its moral progress
         can be judged by the way its animals are treated.”
     </h2>
+
     <p>
         — Commonly attributed to Mahatma Gandhi
     </p>
+
 </section>
+
+
 <!-- =========================================================
      CONTACT
 ========================================================= -->
+
 <section class="contact" id="contact">
+
     <div class="section-heading reveal">
-        <div class="section-tag">Get In Touch</div>
-        <h2>Let's Connect</h2>
+
+        <div class="section-tag">
+            Get In Touch
+        </div>
+
+        <h2>
+            Let's Connect
+        </h2>
+
         <p>
             Feel free to connect with me through the following channels.
         </p>
+
     </div>
+
+
     <div class="contact-box reveal">
+
+
+        <!-- CONTACT DETAILS -->
+
         <div class="contact-grid">
+
             <div class="contact-item">
+
                 <div class="contact-label">
                     📱 Phone
                 </div>
+
                 <a href="tel:03136725927">
                     03136725927
                 </a>
+
             </div>
+
+
             <div class="contact-item">
+
                 <div class="contact-label">
                     📧 Email
                 </div>
+
                 <a href="mailto:raeessaadshahid@gmail.com">
                     raeessaadshahid@gmail.com
                 </a>
+
             </div>
+
+
             <div class="contact-item">
+
                 <div class="contact-label">
                     📍 Location
                 </div>
+
                 <span>
                     Lahore, Pakistan
                 </span>
+
             </div>
+
+
             <div class="contact-item">
+
                 <div class="contact-label">
                     📸 Instagram
                 </div>
+
                 <a
                     href="https://www.instagram.com/call.me.saadi"
                     target="_blank"
@@ -1492,9 +2129,105 @@ footer strong {
                 >
                     @call.me.saadi
                 </a>
+
             </div>
+
         </div>
+
+
+        <!-- =====================================================
+             SUPABASE CONTACT FORM
+        ====================================================== -->
+
+        <form
+            class="contact-form"
+            id="contactForm"
+        >
+
+            <h3>
+                Send Me a Message
+            </h3>
+
+            <p class="form-description">
+                Have a question or want to connect? Send me a message.
+            </p>
+
+
+            <div class="form-group">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                    maxlength="100"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Your Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                    maxlength="150"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Your Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message..."
+                    required
+                    maxlength="2000"
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn btn-primary form-submit"
+                id="submitButton"
+            >
+                📩 Send Message
+            </button>
+
+
+            <div
+                class="form-status"
+                id="formStatus"
+                aria-live="polite"
+            ></div>
+
+        </form>
+
+
+        <!-- CONTACT BUTTONS -->
+
         <div class="contact-buttons">
+
             <a
                 href="https://wa.me/923136725927"
                 class="btn btn-whatsapp"
@@ -1503,6 +2236,8 @@ footer strong {
             >
                 💬 WhatsApp
             </a>
+
+
             <a
                 href="https://www.instagram.com/call.me.saadi"
                 class="btn btn-instagram"
@@ -1511,48 +2246,72 @@ footer strong {
             >
                 📸 Instagram
             </a>
+
+
             <a
                 href="mailto:raeessaadshahid@gmail.com"
                 class="btn btn-email"
             >
                 ✉️ Send Email
             </a>
+
         </div>
+
     </div>
+
+
     <div class="disclaimer">
+
         <strong>Important:</strong>
+
         I am currently a DVM student at UVAS Lahore.
         The information presented on this website is for general
         educational purposes and does not replace professional
         veterinary consultation.
+
     </div>
+
 </section>
+
+
 <!-- =========================================================
      FOOTER
 ========================================================= -->
+
 <footer>
+
     <div class="footer-logo">
         🐾 Vet Saad Shahid
     </div>
+
     <p>
         DVM Student • UVAS Lahore
     </p>
+
     <div class="footer-links">
+
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#gallery">Gallery</a>
         <a href="#knowledge">Knowledge</a>
         <a href="#contact">Contact</a>
+
     </div>
+
     <br>
+
     <p>
         © 2026 Vet Saad Shahid. All rights reserved.
     </p>
+
 </footer>
+
+
 <!-- =========================================================
      FLOATING BUTTONS
 ========================================================= -->
+
 <button
     class="back-top"
     id="backTop"
@@ -1561,6 +2320,8 @@ footer strong {
 >
     ↑
 </button>
+
+
 <a
     href="https://wa.me/923136725927"
     class="whatsapp-float"
@@ -1571,116 +2332,352 @@ footer strong {
 >
     💬
 </a>
+
+
 <!-- =========================================================
-     JAVASCRIPT
+     SUPABASE
 ========================================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
 <script>
+
+/* =========================================================
+   SUPABASE CONFIGURATION
+========================================================= */
+
+const SUPABASE_URL =
+    "https://fmaypokfhvrxyofutmqn.supabase.co";
+
+const SUPABASE_PUBLISHABLE_KEY =
+    "sb_publishable_pVLYZqtLhSQnmskNqoavDQ_DnLLop3k";
+
+
+const supabaseClient =
+    window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_PUBLISHABLE_KEY
+    );
+
+
+/* =========================================================
+   CONTACT FORM → SUPABASE
+========================================================= */
+
+const contactForm =
+    document.getElementById("contactForm");
+
+const submitButton =
+    document.getElementById("submitButton");
+
+const formStatus =
+    document.getElementById("formStatus");
+
+
+contactForm.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    const message =
+        document.getElementById("message").value.trim();
+
+
+    /* Clear previous status */
+
+    formStatus.textContent = "";
+
+    formStatus.className = "form-status";
+
+
+    /* Basic validation */
+
+    if (!name || !email || !message) {
+
+        formStatus.textContent =
+            "Please fill in all fields.";
+
+        formStatus.classList.add("error");
+
+        return;
+    }
+
+
+    /* Email validation */
+
+    const emailPattern =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+
+        formStatus.textContent =
+            "Please enter a valid email address.";
+
+        formStatus.classList.add("error");
+
+        return;
+    }
+
+
+    /* Loading state */
+
+    submitButton.disabled = true;
+
+    submitButton.textContent =
+        "Sending...";
+
+
+    try {
+
+        const { data, error } =
+            await supabaseClient
+                .from("contact_messages")
+                .insert([
+                    {
+                        name: name,
+                        email: email,
+                        message: message
+                    }
+                ])
+                .select();
+
+
+        if (error) {
+
+            console.error(
+                "Supabase error:",
+                error
+            );
+
+            throw error;
+        }
+
+
+        /* Success */
+
+        formStatus.textContent =
+            "✅ Message sent successfully! Thank you for contacting me.";
+
+        formStatus.classList.add("success");
+
+
+        /* Clear form */
+
+        contactForm.reset();
+
+
+    } catch (error) {
+
+        console.error(error);
+
+        formStatus.textContent =
+            "❌ Something went wrong. Please try again later.";
+
+        formStatus.classList.add("error");
+
+
+    } finally {
+
+        submitButton.disabled = false;
+
+        submitButton.textContent =
+            "📩 Send Message";
+
+    }
+
+});
+
+
 /* =========================================================
    DARK / LIGHT MODE
 ========================================================= */
-const themeToggle = document.getElementById("themeToggle");
-const savedTheme = localStorage.getItem("vet-theme");
+
+const themeToggle =
+    document.getElementById("themeToggle");
+
+const savedTheme =
+    localStorage.getItem("vet-theme");
+
+
 if (savedTheme === "dark") {
+
     document.body.classList.add("dark");
+
     themeToggle.textContent = "☀️";
 }
+
+
 themeToggle.addEventListener("click", () => {
+
     document.body.classList.toggle("dark");
-    const isDark = document.body.classList.contains("dark");
-    themeToggle.textContent = isDark ? "☀️" : "🌙";
+
+    const isDark =
+        document.body.classList.contains("dark");
+
+
+    themeToggle.textContent =
+        isDark ? "☀️" : "🌙";
+
+
     localStorage.setItem(
         "vet-theme",
         isDark ? "dark" : "light"
     );
+
 });
+
+
 /* =========================================================
    SCROLL REVEAL
 ========================================================= */
+
 const revealElements =
     document.querySelectorAll(".reveal");
+
+
 const revealObserver =
     new IntersectionObserver(
         (entries, observer) => {
+
             entries.forEach(entry => {
+
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    observer.unobserve(entry.target);
+
+                    entry.target.classList.add(
+                        "visible"
+                    );
+
+                    observer.unobserve(
+                        entry.target
+                    );
+
                 }
+
             });
+
         },
         {
             threshold: 0.12
         }
     );
+
+
 revealElements.forEach(element => {
+
     revealObserver.observe(element);
+
 });
+
+
 /* =========================================================
    BACK TO TOP
 ========================================================= */
+
 const backTop =
     document.getElementById("backTop");
+
+
 window.addEventListener("scroll", () => {
+
     if (window.scrollY > 500) {
+
         backTop.classList.add("show");
+
     } else {
+
         backTop.classList.remove("show");
+
     }
+
 });
+
+
 backTop.addEventListener("click", () => {
+
     window.scrollTo({
+
         top: 0,
+
         behavior: "smooth"
+
     });
+
 });
+
+
 /* =========================================================
-   CLOSE MOBILE / NORMAL NAVIGATION SMOOTHLY
+   NAVIGATION
 ========================================================= */
-document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("click", () => {
-        const target =
-            document.querySelector(
-                link.getAttribute("href")
-            );
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
+
+document
+    .querySelectorAll('a[href^="#"]')
+    .forEach(anchor => {
+
+        anchor.addEventListener(
+            "click",
+            function(event) {
+
+                const target =
+                    document.querySelector(
+                        this.getAttribute("href")
+                    );
+
+
+                if (target) {
+
+                    event.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+
+                }
+
+            }
+        );
+
     });
-});
+
+
 /* =========================================================
    IMAGE FALLBACK
-   Shows a clean placeholder if an image filename
-   is missing or cannot be loaded.
 ========================================================= */
-document.querySelectorAll("img").forEach(image => {
-    image.addEventListener("error", () => {
-        image.style.background =
-            "linear-gradient(135deg,#e8fff6,#d7eee5)";
-        image.style.objectFit = "contain";
-        image.removeAttribute("src");
-        image.alt = "Image unavailable";
+
+document
+    .querySelectorAll("img")
+    .forEach(image => {
+
+        image.addEventListener(
+            "error",
+            () => {
+
+                image.style.background =
+                    "linear-gradient(135deg,#e8fff6,#d7eee5)";
+
+                image.style.objectFit =
+                    "contain";
+
+                image.removeAttribute(
+                    "src"
+                );
+
+                image.alt =
+                    "Image unavailable";
+
+            }
+        );
+
     });
-});
-/* =========================================================
-   PREVENT EMPTY LINK JUMPS
-========================================================= */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(event) {
-        const target =
-            document.querySelector(
-                this.getAttribute("href")
-            );
-        if (target) {
-            event.preventDefault();
-            target.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        }
-    });
-});
+
 </script>
+
 </body>
 </html>

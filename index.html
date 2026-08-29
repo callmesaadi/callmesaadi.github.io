@@ -43,25 +43,25 @@ img {
     --white: #ffffff;
 }
 /* =========================================================
-   NAVIGATION
+   HEADER
 ========================================================= */
 header {
     position: sticky;
     top: 0;
     z-index: 9999;
     background: rgba(255,255,255,0.96);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(15px);
     padding: 17px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 3px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.07);
 }
 .logo {
     color: var(--green);
     font-size: 21px;
     font-weight: 800;
-    letter-spacing: .3px;
+    letter-spacing: .4px;
 }
 nav {
     display: flex;
@@ -86,8 +86,16 @@ nav a:hover {
     display: flex;
     align-items: center;
     background:
-        radial-gradient(circle at 85% 20%, rgba(8,127,91,.10), transparent 30%),
-        linear-gradient(135deg, #e8fff6, #f7faf9);
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(8,127,91,.13),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #e8fff6,
+            #f7faf9
+        );
 }
 .hero-content {
     width: 100%;
@@ -100,7 +108,7 @@ nav a:hover {
 }
 .hero-badge {
     display: inline-block;
-    padding: 8px 15px;
+    padding: 9px 17px;
     background: white;
     color: var(--green);
     border-radius: 30px;
@@ -108,13 +116,13 @@ nav a:hover {
     font-weight: 800;
     letter-spacing: 1px;
     box-shadow: 0 7px 25px rgba(0,0,0,.06);
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 .hero-text h1 {
     color: var(--dark-green);
     font-size: clamp(44px, 5vw, 66px);
     line-height: 1.05;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
 }
 .hero-text h1 span {
     color: var(--green);
@@ -133,7 +141,7 @@ nav a:hover {
 .btn {
     display: inline-block;
     padding: 13px 24px;
-    border-radius: 10px;
+    border-radius: 11px;
     font-weight: 700;
     transition: .3s;
 }
@@ -150,10 +158,16 @@ nav a:hover {
     color: var(--green);
     background: transparent;
 }
+.secondary:hover {
+    background: var(--green);
+    color: white;
+}
 .whatsapp {
     background: #25d366;
     color: white;
-    border: 2px solid #25d366;
+}
+.whatsapp:hover {
+    background: #1ebe5d;
 }
 /* =========================================================
    PROFILE PHOTO
@@ -168,7 +182,8 @@ nav a:hover {
     object-position: center;
     border-radius: 28px;
     border: 7px solid white;
-    box-shadow: 0 25px 60px rgba(0,0,0,.18);
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.18);
     display: block;
     transition: .4s;
 }
@@ -482,18 +497,13 @@ section {
 .contact-item a {
     color: var(--green);
 }
-/* BUTTON GAP */
 .contact-buttons {
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 22px;
-    margin-top: 35px;
-}
-.contact-buttons .btn {
-    min-width: 155px;
-    text-align: center;
+    gap: 20px;
 }
 /* =========================================================
    DISCLAIMER
@@ -619,6 +629,9 @@ footer strong {
     .hero-text p {
         font-size: 16px;
     }
+    .hero-buttons {
+        gap: 12px;
+    }
     .profile-photo {
         height: 330px;
         border-radius: 20px;
@@ -647,11 +660,11 @@ footer strong {
     }
     .contact-buttons {
         flex-direction: column;
-        gap: 16px;
+        gap: 18px;
     }
     .contact-buttons .btn {
         width: 100%;
-        max-width: 280px;
+        text-align: center;
     }
     .quote-section h2 {
         font-size: 27px;
@@ -949,11 +962,11 @@ footer strong {
                 </p>
             </div>
         </div>
-        <!-- BIRD -->
+        <!-- BIRDS -->
         <div class="gallery-card">
             <img
                 src="IMG_2747.jpeg"
-                alt="Bird"
+                alt="Birds"
                 loading="lazy"
             >
             <div class="gallery-overlay"></div>
@@ -1078,6 +1091,7 @@ footer strong {
                 </a>
             </div>
         </div>
+        <!-- CONTACT BUTTONS -->
         <div class="contact-buttons">
             <a
                 href="https://wa.me/923136725927"

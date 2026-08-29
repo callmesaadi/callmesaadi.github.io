@@ -683,26 +683,10 @@ section {
     color: var(--green);
 }
 
-/* =========================================================
-   CONTACT BUTTON SPACING
-========================================================= */
-
 .contact-buttons {
-    margin-top: 35px;
+    text-align: center;
 
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    gap: 18px;
-}
-
-.contact-buttons .btn {
-    margin: 0;
+    margin-top: 30px;
 }
 
 /* =========================================================
@@ -837,10 +821,6 @@ footer strong {
     }
 }
 
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
 @media(max-width: 650px) {
 
     header {
@@ -915,18 +895,6 @@ footer strong {
     .btn {
         padding: 12px 18px;
     }
-
-    /* Contact buttons on small screens */
-    .contact-buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .contact-buttons .btn {
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
 }
 
 </style>
@@ -955,7 +923,6 @@ footer strong {
     </nav>
 
 </header>
-
 
 <!-- =========================================================
      HERO
@@ -998,7 +965,6 @@ footer strong {
 
         </div>
 
-
         <div class="photo-container fade-up">
 
             <img
@@ -1018,7 +984,6 @@ footer strong {
 
 </section>
 
-
 <!-- =========================================================
      ABOUT
 ========================================================= -->
@@ -1034,7 +999,6 @@ footer strong {
         </p>
 
     </div>
-
 
     <div class="about-container">
 
@@ -1052,7 +1016,6 @@ footer strong {
 
         </div>
 
-
         <div class="about-card">
 
             <div class="about-icon">🎯</div>
@@ -1067,7 +1030,6 @@ footer strong {
 
         </div>
 
-
         <div class="about-card">
 
             <div class="about-icon">📚</div>
@@ -1081,7 +1043,6 @@ footer strong {
             </p>
 
         </div>
-
 
         <div class="about-card">
 
@@ -1101,7 +1062,6 @@ footer strong {
 
 </section>
 
-
 <!-- =========================================================
      EDUCATION
 ========================================================= -->
@@ -1117,7 +1077,6 @@ footer strong {
         </p>
 
     </div>
-
 
     <div class="timeline">
 
@@ -1143,7 +1102,6 @@ footer strong {
             </div>
 
         </div>
-
 
         <div class="timeline-item">
 
@@ -1173,7 +1131,6 @@ footer strong {
 
 </section>
 
-
 <!-- =========================================================
      SKILLS
 ========================================================= -->
@@ -1190,53 +1147,75 @@ footer strong {
 
     </div>
 
-
     <div class="skills-grid">
 
         <div class="skill-card">
+
             <div class="skill-icon">🐕</div>
+
             <h3>Companion Animals</h3>
+
         </div>
 
         <div class="skill-card">
+
             <div class="skill-icon">🐄</div>
+
             <h3>Livestock</h3>
+
         </div>
 
         <div class="skill-card">
+
             <div class="skill-icon">🩺</div>
+
             <h3>Animal Health</h3>
+
         </div>
 
         <div class="skill-card">
+
             <div class="skill-icon">💉</div>
+
             <h3>Preventive Care</h3>
+
         </div>
 
         <div class="skill-card">
+
             <div class="skill-icon">🥗</div>
+
             <h3>Animal Nutrition</h3>
+
         </div>
 
         <div class="skill-card">
+
             <div class="skill-icon">❤️</div>
+
             <h3>Animal Welfare</h3>
+
         </div>
 
         <div class="skill-card">
+
             <div class="skill-icon">🔬</div>
+
             <h3>Veterinary Science</h3>
+
         </div>
 
         <div class="skill-card">
+
             <div class="skill-icon">📖</div>
+
             <h3>Continuous Learning</h3>
+
         </div>
 
     </div>
 
 </section>
-
 
 <!-- =========================================================
      ANIMAL GALLERY
@@ -1254,7 +1233,6 @@ footer strong {
         </p>
 
     </div>
-
 
     <div class="gallery-grid">
 
@@ -1282,7 +1260,6 @@ footer strong {
 
         </div>
 
-
         <!-- CAT -->
 
         <div class="gallery-card">
@@ -1306,7 +1283,6 @@ footer strong {
             </div>
 
         </div>
-
 
         <!-- CATTLE -->
 
@@ -1332,10 +1308,334 @@ footer strong {
 
         </div>
 
-
         <!-- HORSE -->
 
         <div class="gallery-card">
 
             <img
-                src="https://images.pexels.com/photos/1996333/pexels-photo-199633
+                src="https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Horse"
+                loading="lazy"
+            >
+
+            <div class="gallery-overlay"></div>
+
+            <div class="gallery-info">
+
+                <h3>Horses</h3>
+
+                <p>
+                    Equine care and welfare
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- SHEEP -->
+
+        <div class="gallery-card">
+
+            <img
+                src="https://images.pexels.com/photos/164673/pexels-photo-164673.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Sheep"
+                loading="lazy"
+            >
+
+            <div class="gallery-overlay"></div>
+
+            <div class="gallery-info">
+
+                <h3>Sheep</h3>
+
+                <p>
+                    Small ruminant management
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- BIRD -->
+
+        <div class="gallery-card">
+
+            <img
+                src="https://images.pexels.com/photos/97533/pexels-photo-97533.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Bird"
+                loading="lazy"
+            >
+
+            <div class="gallery-overlay"></div>
+
+            <div class="gallery-info">
+
+                <h3>Birds</h3>
+
+                <p>
+                    Avian health and care
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     VETERINARY KNOWLEDGE
+========================================================= -->
+
+<section class="services" id="services">
+
+    <div class="section-title">
+
+        <h2>Veterinary Knowledge</h2>
+
+        <p>
+            Educational areas related to animal health and responsible care.
+        </p>
+
+    </div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+
+            <div class="service-icon">🩺</div>
+
+            <h3>Animal Health</h3>
+
+            <p>
+                Educational information about common animal health
+                concerns and basic preventive care.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">💉</div>
+
+            <h3>Vaccination</h3>
+
+            <p>
+                General educational information about vaccination
+                and preventive animal healthcare.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">🥗</div>
+
+            <h3>Animal Nutrition</h3>
+
+            <p>
+                Basic information about nutrition, feeding and
+                healthy animal management.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">🐕</div>
+
+            <h3>Pet Care</h3>
+
+            <p>
+                Educational guidance about hygiene, daily care
+                and responsible pet ownership.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">🐄</div>
+
+            <h3>Livestock Care</h3>
+
+            <p>
+                Basic information about livestock management,
+                welfare and responsible care.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">📚</div>
+
+            <h3>Veterinary Education</h3>
+
+            <p>
+                Easy-to-understand educational content for
+                students and animal owners.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     QUOTE
+========================================================= -->
+
+<section class="quote-section">
+
+    <h2>
+        “The greatness of a nation and its moral progress
+        can be judged by the way its animals are treated.”
+    </h2>
+
+    <p>
+        — Inspired by the principle of animal welfare
+    </p>
+
+</section>
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Feel free to get in touch with me.
+        </p>
+
+    </div>
+
+    <div class="contact-box">
+
+        <div class="contact-grid">
+
+            <div class="contact-item">
+
+                <strong>📱 Phone</strong>
+
+                <a href="tel:03136725927">
+                    03136725927
+                </a>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>📧 Email</strong>
+
+                <a href="mailto:raeessaadshahid@gmail.com">
+                    raeessaadshahid@gmail.com
+                </a>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>🏢 Office</strong>
+
+                Lahore, Pakistan
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>📸 Instagram</strong>
+
+                <a
+                    href="https://www.instagram.com/call.me.saadi"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    @call.me.saadi
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="contact-buttons">
+
+            <a
+                href="https://wa.me/923136725927"
+                class="btn whatsapp"
+                target="_blank"
+                rel="noopener"
+            >
+                💬 WhatsApp Me
+            </a>
+
+            <a
+                href="https://www.instagram.com/call.me.saadi"
+                class="btn secondary"
+                target="_blank"
+                rel="noopener"
+            >
+                📸 Instagram
+            </a>
+
+            <a
+                href="mailto:raeessaadshahid@gmail.com"
+                class="btn primary"
+            >
+                ✉️ Send Email
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="disclaimer">
+
+        <strong>Important:</strong>
+
+        I am currently a DVM student at UVAS Lahore.
+        The information presented on this website is for
+        general educational purposes and does not replace
+        professional veterinary consultation.
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Vet Saad Shahid</strong>
+    </p>
+
+    <p>
+        DVM Student • UVAS Lahore
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
